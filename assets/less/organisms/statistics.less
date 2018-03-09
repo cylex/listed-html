@@ -1,0 +1,125 @@
+/*
+  Statistics styling
+*/
+//statistics section
+.statistics {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  p {
+    color: @dark-gray;
+    text-align: center;
+    font-size: @font--large;
+    &.number {
+      padding-top: 15px;
+      padding-bottom: 10px;
+      font-size: @font--xxxlarge;
+      font-weight: @font--semibold;
+    }
+  }
+}
+//statistics section with specific backgound image
+//about-us page
+.statistics {
+  .material-icons {
+    font-size: 54px;
+    display: block;
+    text-align: center;
+    color: @icon-default;
+  }
+  //with backgound color
+  &.bg-color {
+    background-color: @background--darker-gray;
+    text-align: center;
+    p {
+      color: @white;
+      &:first-child {
+        display: inline-block;
+        font-weight: @font--regular;
+      }
+      &:nth-child(2) {
+        font-size: @font--base;
+        display: inline-block;
+        max-width: 50px;
+        margin-left: 15px;
+        line-height: 20px;
+        margin-top: 5px;
+        text-align: left;
+      }
+    }
+  }
+  //with background image
+  &.bg-image {
+    display: table;
+    height: 400px;
+    min-height: 100%;
+    width: 100%;
+    .content {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    p {
+      color: @white;
+    }
+    &.about-us {
+      background-image: url('../../assets/images/about-us/facts-bg.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    &.counters {
+      background-image: url('../../assets/images/content/counters.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    .material-icons {
+      opacity: .75;
+      color: @white;
+    }
+  }
+}
+
+// * Responsive * //
+@media(max-width: @screen-md-max) {
+  .statistics {
+    [class*="col-"] {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  }
+}
+@media(max-width: @screen-sm-max) {
+  .statistics {
+    p {
+      font-size: @font--medium;
+      &.number {
+        font-size: @font--double-base;
+      }
+    }
+    &.bg-color {
+      p {
+        &:first-child {
+          position: relative;
+          top: -8px;
+        }
+      }
+    }
+  }
+}
+@media(max-width: @screen-xs-max) {
+  .statistics {
+    .counter-item:nth-child(3) {
+      clear: both;
+    }
+    &.bg-color {
+      p {
+        &:first-child {
+          font-size: @font--xlarge;
+        }
+        &:nth-child(2) {
+          font-size: @font--small;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
+

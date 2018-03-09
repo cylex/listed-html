@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Listed | Business Directory HTML Template</title>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libraries/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/libraries/smartmenu/addons/bootstrap/jquery.smartmenus.bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900" rel="stylesheet">
+  </head>
+
+  <body class="nav-fixed">
+    <header>
+      <nav class="navbar navbar-default">
+        <div>
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5 navbar-header">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Home"></a>
+          </div>
+          <div id="header-second" class="col-lg-5 col-md-5 col-sm-9 text-right">
+            <button type="button" class="navbar-toggle pull-right visible-sm visible-xs collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+            </button>
+            <a href="#" class="visible-xs pull-right collapsed" data-toggle="collapse" data-target="#search-form" aria-expanded="false"><i class="fa fa-search" aria-hidden="true"></i></a>
+            <form id="search-form" class="navbar-form">
+              <input type="text" class="form-control" placeholder="Place or business">
+              <input type="text" class="form-control" placeholder="Location">
+              <a href="search.html" class="form-control btn btn-search btn-search-small"><i class="fa fa-search" aria-hidden="true"></i> <span>Search</span></a>
+            </form>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12">
+            <button type="button" class="navbar-toggle pull-right hidden-sm hidden-xs collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-collapse collapse collapsed" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="about-us.html">About Us</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle disabled-link disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="search.html">Listing details</a></li>
+                    <li><a href="search.html">Search v1</a></li>
+                    <li><a href="search-list.html">Search v2</a></li>
+                    <li><a href="company.html">Company</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="#" class="disabled">User panel <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="user.html">User page</a></li>
+                        <li><a href="my_listings.html">My listings</a></li>
+                        <li><a href="my_profile.html">My profile</a></li>
+                        <li><a href="add_listing.html">Add listing</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="coming-soon.html">Coming soon</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="terms-and-conditions.html">Terms and conditions</a></li>
+                    <li><a href="403.html">403 - Acces Denied</a></li>
+                    <li><a href="404.html">404 - Not Found</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle disabled-link disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Elements <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="tabs-buttons.html">Tabs & buttons</a></li>
+                    <li><a href="forms-messages.html">Forms & messages</a></li>
+                    <li><a href="countdowns-counters.html">Countdowns & Counters</a></li>
+                    <!-- <li role="separator" class="divider"></li> -->
+                    <li><a href="grid.html">Grid</a></li>
+                    <li><a href="icons.html">Icons</a></li>
+                    <li><a href="progress-bars.html">Progress Bars</a></li>
+                    <li><a href="sliders-galleries.html">Sliders & Galleries</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle disabled-link disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="blog.html">Blog list v1</a></li>
+                    <li><a href="blog_v2.html">Blog list v2</a></li>
+                    <li><a href="blog-categories.html">Blog category page</a></li>
+                    <li><a href="article-page.html">Article page v1</a></li>
+                    <li><a href="article-page_v2.html">Article page v2</a></li>
+                  </ul>
+                </li>
+                <li><a class="circle-link" href="login.html">Log In</a></li>
+                <li><a class="circle-link" href="sign-up.html">Sign Up</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div>
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="content-intro-gallery content-spacing blog-gallery">
+            <div class="container">
+              <div class="row first-line"> <!-- first line of images - one big, two small -->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 first"> <!-- first image - big -->
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 intro intro-one intro-big">
+                    <a href="article-page.html" class="link-image"></a>
+                    <div class="intro-text"> <!-- text from inside of div  -->
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                          <div class="col-lg-12 col-md-12"> <!-- text title -->
+                            <h2>
+                              <a href="article-page.html" class="with-element">Forums that should exist but don't</a>
+                            </h2>
+                          </div> <!-- end of text title -->
+                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> <!-- text left -->
+                            <span class="white">by Banne Lee</span>
+                          </div> <!-- end of text left -->
+                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> <!-- text right -->
+                            <span><a href="#" class="text-link">Community</a></span>
+                          </div> <!-- end of text right -->
+                        </div>
+                      </div>
+                    </div> <!-- end of text from inside of div  -->
+                  </div>
+                </div> <!-- end of first big image -->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 second"> <!-- second set of images from first line -->
+                  <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12"> <!-- second image - small -->
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 intro intro-two intro-small">
+                      <a href="article-page.html" class="link-image"></a>
+                      <div class="intro-text"> <!-- text from inside of div  -->
+                        <div class="row">
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> <!-- text title -->
+                              <h2>
+                                <a href="article-page.html" class="with-element">The 15 provinces that will make you want to fall in love</a>
+                              </h2>
+                            </div> <!-- end of text title -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> <!-- text left -->
+                              <span class="white">by Davey Jones</span>
+                            </div> <!-- end of text left -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> <!-- text right -->
+                              <span><a href="#" class="text-link">Social</a></span>
+                            </div> <!-- end of text right -->
+                          </div>
+                        </div>
+                      </div> <!-- end of text from inside of div -->
+                    </div>
+                  </div> <!-- end of second image -->
+                  <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12"> <!-- third image - small -->
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 intro intro-three intro-small">
+                      <a href="article-page.html" class="link-image"></a>
+                      <div class="intro-text"> <!-- text from inside of div  -->
+                        <div class="row">
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12"> <!-- text title -->
+                              <h2>
+                                <a href="article-page.html" class="with-element">The lazy way to business</a>
+                              </h2>
+                            </div> <!-- end of text title -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> <!-- text left -->
+                              <span class="white">by Maria Gonzalez</span>
+                            </div> <!-- end of text left -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> <!-- text right -->
+                              <span><a href="#" class="text-link">Business</a></span>
+                            </div> <!-- end of text right -->
+                          </div>
+                        </div>
+                      </div> <!-- end of text from inside of div -->
+                    </div>
+                  </div> <!-- end of third image -->
+                </div>
+              </div> <!-- end of first line of images -->
+              <!-- <div class="row second-line">
+                Second line of images goes here if one wants
+              </div> -->
+            </div>
+          </div>
+          <div class="container smaller-container">
+            <div class="content-list">
+              <div class="hidden-xs">
+                <form>
+                  <div class="form-group">
+                    <label>Search</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control">
+                      <span class="input-group-btn">
+                       <a href="search.html" class="btn btn-search btn-search-small form-control"><i class="fa fa-search"></i></a>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group form-select">
+                    <label>Categories</label>
+                    <select class="form-control" name="month">
+                    <option selected="selected" value="">Community</option>
+                    <option value="01">Social</option>
+                    <option value="02">Business</option>
+                    <option value="03">Urban</option>
+                    <option value="04">Media</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
+              <div class="hidden-lg hidden-md hidden-sm col-xs-12 search-and-filters">
+                <div class="col-xs-6">
+                 <a href="#" class="btn btn-search-small"><i class="fa fa-search"></i></a>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Articles">
+                  </div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-filter"></i>
+                      <span>Filters</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <h3>Categories</h3>
+                      <a class="dropdown-item" href="#">Social</a>
+                      <a class="dropdown-item" href="#">Business</a>
+                      <a class="dropdown-item" href="#">Media</a>
+                      <a class="dropdown-item" href="#">Community</a>
+                      <a class="dropdown-item" href="#">Urban</a>
+                      <div class="dropdown-divider"></div>
+                      <h3>Archives</h3>
+                      <a class="dropdown-item" href="#">2016</a>
+                      <a class="dropdown-item" href="#">2015</a>
+                      <a class="dropdown-item" href="#">2014</a>
+                      <a class="dropdown-item" href="#">2013</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-item content-spacing">
+                <h2 class="with-element center-element"><a href="article-page.html" class="as-header">How to enjoy your job?</a></h2>
+                <div class="elements">
+                  <div><a href="user.html" class="gray-link"><img src="assets/images/blog/author1.png" alt="Banne Lee" class="round">Banne Lee</a></div>
+                  <div><i class="fa fa-calendar" aria-hidden="true"></i>July 27, 2016</div>
+                  <div><i class="fa fa-tag" aria-hidden="true"></i><a href="blog-categories.html">Community</a></div>
+                </div>
+                <a href="article-page.html" class="article-image"><img src="assets/images/blog/article1.jpg" alt="article" class="list-image"></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Donec condimentum elementum mi a fringilla. Nam pretium fermentum nulla quis rhoncus. Aenean imperdiet velit ac odio placerat. Integer accumsan mauris vel libero blandit efficitur. Maecenas nec elit quis enim pellentesque aliquam...</p>
+                <a href="article-page.html" class="more-link boxed">Read More</a>
+              </div>
+              <div class="list-item content-spacing">
+                <h2 class="with-element center-element"><a href="article-page.html" class="as-header">Keep work moving forward with updated drupal and paper mobile apps</a></h2>
+                <div class="elements">
+                  <div><a href="user.html" class="gray-link"><img src="assets/images/blog/author2.png" alt="Jessica Jones" class="round">Jessica Jones</a></div>
+                  <div><i class="fa fa-calendar" aria-hidden="true"></i>July 26, 2016</div>
+                  <div><i class="fa fa-tag" aria-hidden="true"></i><a href="blog-categories.html">Social</a></div>
+                </div>
+                <a href="article-page.html" class="article-image"><img src="assets/images/blog/article2.jpg" alt="article" class="list-image"></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Donec condimentum elementum mi a fringilla. Nam pretium fermentum nulla quis rhoncus. Aenean imperdiet velit ac odio placerat. Integer accumsan mauris vel libero blandit efficitur. Maecenas nec elit quis enim pellentesque aliquam...</p>
+                <a href="article-page.html" class="more-link boxed">Read More</a>
+              </div>
+              <div class="list-item content-spacing">
+                <h2 class="with-element center-element"><a href="article-page.html" class="as-header">Goal: Success</a></h2>
+                <div class="elements">
+                  <div><a href="user.html" class="gray-link"><img src="assets/images/blog/author3.png" alt="Davey Jones" class="round">Davey Jones</a></div>
+                  <div><i class="fa fa-calendar" aria-hidden="true"></i>July 26, 2016</div>
+                  <div><i class="fa fa-tag" aria-hidden="true"></i><a href="blog-categories.html">Urban</a></div>
+                </div>
+                <a href="article-page.html" class="article-image"><img src="assets/images/blog/blog-3.jpg" alt="article" class="list-image"></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Donec condimentum elementum mi a fringilla. Nam pretium fermentum nulla quis rhoncus. Aenean imperdiet velit ac odio placerat. Integer accumsan mauris vel libero blandit efficitur. Maecenas nec elit quis enim pellentesque aliquam...</p>
+                <a href="article-page.html" class="more-link boxed">Read More</a>
+              </div>
+              <div class="list-item content-spacing">
+                <h2 class="with-element center-element"><a href="article-page.html" class="as-header">Leadership</a></h2>
+                <div class="elements">
+                  <div><a href="user.html" class="gray-link"><img src="assets/images/blog/author2.png" alt="Jessica Jones" class="round">Jessica Jones</a></div>
+                  <div><i class="fa fa-calendar" aria-hidden="true"></i>July 25, 2016</div>
+                  <div><i class="fa fa-tag" aria-hidden="true"></i><a href="blog-categories.html">Business</a></div>
+                </div>
+                <a href="article-page.html" class="article-image"><img src="assets/images/blog/blog-4.jpg" alt="article" class="list-image"></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Donec condimentum elementum mi a fringilla. Nam pretium fermentum nulla quis rhoncus. Aenean imperdiet velit ac odio placerat. Integer accumsan mauris vel libero blandit efficitur. Maecenas nec elit quis enim pellentesque aliquam...</p>
+                <a href="article-page.html" class="more-link boxed">Read More</a>
+              </div>
+            </div>
+            <div class="pagination-section">
+              <nav aria-label="Page navigation">
+                <ul class="pagination">
+                  <li>
+                    <a href="#" aria-label="Previous" class="prev">
+                      <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li>
+                    <a href="#" aria-label="Next" class="next">
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Home" class="logo"></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend, mi vel dapibus tempor, sem nibh gravida turpis, a ultrices purus ex in orci.</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/" class="footer-social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://plus.google.com/" class="footer-social-link"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/" class="footer-social-link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 footer-menu">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 menu">
+                <h2 class="footer-element">Top Categories</h2>
+                <ul>
+                  <li><a href="search.html" class="footer-link">Food</a></li>
+                  <li><a href="search.html" class="footer-link">Shopping</a></li>
+                  <li><a href="search.html" class="footer-link">Clinics & Medical</a></li>
+                  <li><a href="search.html" class="footer-link">Entertainment</a></li>
+                  <li><a href="search.html" class="footer-link">Hotels & Travel</a></li>
+                  <li><a href="search.html" class="footer-link">Beauty & Salon</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 menu">
+                <h2 class="footer-element">Useful Links</h2>
+                <ul>
+                  <li><a href="about-us.html" class="footer-link">About Us</a></li>
+                  <li><a href="contact.html" class="footer-link">Contact</a></li>
+                  <li><a href="blog.html" class="footer-link">Blog</a></li>
+                  <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                  <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 menu">
+                <h2 class="footer-element">Legal</h2>
+                <ul>
+                  <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                  <li><a href="terms-and-conditions.html" class="footer-link">Terms & Conditions</a></li>
+                  <li><a href="#" class="footer-link">Legal Disclosure</a></li>
+                  <li><a href="#" class="footer-link">Use of Cookies</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2017. All rights reserved.</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/libraries/smartmenu/jquery.smartmenus.js"></script>
+    <script src="assets/libraries/smartmenu/addons/bootstrap/jquery.smartmenus.bootstrap.js"></script>
+  </body>
+
+</html>

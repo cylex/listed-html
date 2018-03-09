@@ -1,0 +1,42 @@
+/* Box with image as background styling */
+.box-with-bg-image {
+  margin-bottom: 20px;
+  > div:hover {
+    -webkit-box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 200ms linear,color 250ms linear;
+    -moz-transition: all 200ms linear,color 250ms linear;
+    -o-transition: all 200ms linear,color 250ms linear;
+    transition: all 200ms linear,color 250ms linear;
+  }
+  .static-element {
+    display: block;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    &.white-link:hover {
+      color: #fff;
+    }
+    &:before {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+      background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+      background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+    }
+    > div {
+      position: relative;
+    }
+  }
+  h3, .small-text {
+    margin-bottom: 5px;
+  }
+}

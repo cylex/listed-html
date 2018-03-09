@@ -1,0 +1,86 @@
+/*
+  Pricing table styling
+*/
+//pricing table with offers
+.pricing-table-item {
+  .boxed {
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 20px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    h2 {
+      margin-bottom: 40px;
+    }
+    .price-items {
+      margin-top: 20px;
+      display: inline-block;
+      text-align: left;
+      p {
+        padding-left: 25px;
+        text-indent: -25px;
+      }
+      .fa {
+        &:before {
+          position: relative;
+          left: 12px;
+        }
+      }
+    }
+    .price {
+      font-size: @font--h1;
+      font-weight: @font--semibold;
+      margin: 30px 0;
+      span {
+        font-weight: @font--regular;
+        font-size: 0.800em;
+        margin-right: 5px;
+      }
+    }
+    &:hover {
+      -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+}
+
+//* Responsive *//
+@media(min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+  .pricing-table-item {
+    .boxed {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+@media(min-width: @screen-sm-min) {
+  //show all pricing offers
+  .tab-content > .tab-pane.pricing-table-item {
+    display: block;
+  }
+}
+@media(max-width: @screen-sm-max) {
+  .pricing-table {
+    display: table;
+    margin: auto;
+  }
+  .pricing-table-item {
+    margin-top: 20px !important;
+    .boxed {
+      margin-top: 20px !important;
+    }
+  }
+}

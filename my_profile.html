@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Listed | Business Directory HTML Template</title>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/libraries/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libraries/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="my-profile">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs left-column remove-padding">
+          <div class="col-lg-12 col-md-12 logo">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Home"></a>
+          </div>
+          <div class="col-lg-12 col-md-12 user-menu">
+            <ul>
+              <li>
+                <h6 class="uppercase">Listings</h6>
+              </li>
+              <li>
+                <div id="accordionOne">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <a data-toggle="collapse" href="#collapseOne" class="white-link rotate-icon">
+                        <i class="fa fa-clone" aria-hidden="true"></i>
+                          My Listings
+                        <i class="fa fa-chevron-down rotate-icon-left"></i>
+                      </a>
+                    </div>
+                    <div id="collapseOne" class="collapse">
+                      <div class="card-body">
+                      <ul>
+                        <li>
+                          <a href="my_listings.html" class="white-link" id="my_listings_active">
+                            Active <span class="green-text">9</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="my_listings.html" class="white-link" id="my_listings_pending">
+                            Pending <span class="yellow-text">2</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="my_listings.html" class="white-link" id="my_listings_expired">
+                            Expired <span class="red-text">4</span>
+                          </a>
+                        </li>
+                      </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="reviews.html" class="white-link">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  Reviews
+                </a>
+              </li>
+              <li>
+                <a href="add_listing.html" class="white-link">
+                  <i class="fa fa-plus-square" aria-hidden="true"></i>
+                  Add Listing
+                </a>
+              </li>
+              <li>
+                <h6 class="uppercase">Account</h6>
+              </li>
+              <li>
+                <a href="my_profile.html" class="white-link">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                  My Profile
+                </a>
+              </li>
+              <li>
+                <a href="login.html" class="white-link">
+                  <i class="fa fa-power-off" aria-hidden="true"></i>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 right-column">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 top-content">
+              <div class="hidden-lg hidden-md hidden-sm user-second-menu">
+                <i class="material-icons slide-menu-icon">menu</i>
+                <div class="menu">
+                  <ul>
+                    <li>
+                      <h6 class="uppercase">Listings</h6>
+                    </li>
+                    <li>
+                      <div id="accordionTwo">
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <a data-toggle="collapse" href="#collapseTwo" class="white-link rotate-icon">
+                              <i class="fa fa-clone" aria-hidden="true"></i>
+                                My Listings
+                              <i class="fa fa-chevron-down rotate-icon-left"></i>
+                            </a>
+                          </div>
+                          <div id="collapseTwo" class="collapse">
+                            <div class="card-body">
+                            <ul>
+                              <li>
+                                <a href="my_listings.html" class="white-link" id="my_listings_active_two">
+                                  Active <span class="green-text">9</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="white-link" id="my_listings_pending_two">
+                                  Pending <span class="yellow-text">2</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="white-link" id="my_listings_expired_two">
+                                  Expired <span class="red-text">4</span>
+                                </a>
+                              </li>
+                            </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="reviews.html" class="white-link">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        Reviews
+                      </a>
+                    </li>
+                    <li>
+                      <a href="add_listing.html" class="white-link">
+                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                        Add Listing
+                      </a>
+                    </li>
+                    <li>
+                      <h6 class="uppercase">Account</h6>
+                    </li>
+                    <li>
+                      <a href="my_profile.html" class="white-link">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        My Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a href="login.html" class="white-link">
+                        <i class="fa fa-power-off" aria-hidden="true"></i>
+                        Logout
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <!-- Show logo in right-column only on mobile devices -->
+                <a href="index.html" class="hidden-lg hidden-md hidden-sm col-xs-4 logo left-align remove-padding"><img src="assets/images/logo.png" alt="Home"></a>
+                <!-- End show of logo image in right-column -->
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 remove-padding">
+                <!-- Collapse navbar -->
+                <div>
+                  <ul class="nav navbar-right">
+                    <li role="presentation" class="dropdown">
+                      <a class="dropdown-toggle header-link regular" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/images/user/user_1.jpg" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation" alt="User">
+                        <span class="hidden-xs">
+                          Chow Ming Lee
+                          <i class="fa fa-chevron-down rotate-icon-top"></i>
+                        </span>
+                        <!-- Show icon for dropdown menu on mobile devices -->
+                        <i class="hidden-lg hidden-md hidden-sm material-icons">more_vert</i>
+                        <!-- End Show icon for dropdown menu on mobile devices -->
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li class="nav-item">
+                          <a class="nav-link" href="reviews.html"><i class="fa fa-star" aria-hidden="true"></i>Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="add_listing.html"><i class="fa fa-plus-square" aria-hidden="true"></i>Add listing</a>
+                        </li>
+                        <li>
+                          <hr />
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="my_profile.html"><i class="fa fa-user" aria-hidden="true"></i>My profile</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="login.html"><i class="fa fa-power-off" aria-hidden="true"></i>Logout</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End navbar -->
+              </div>
+              </div>
+          </div>
+          <!-- <div class="row"> -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h3 class="uppercase">My profile</h3>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 remove-padding" id="profile-details">
+              <h3 class="regular">Profile details</h3>
+              <img src="assets/images/user/user_1.jpg" alt="User">
+              <label class="upload-image btn btn-default btn-sm" for="my-file-selector">
+                Upload photo<input id="my-file-selector" type="file" class="hidden">
+              </label>
+              <form>
+                <div class="form-group col-lg-6 col-md-6">
+                  <label>Full name</label>
+                  <input type="text" placeholder="Joe Dow">
+                </div>
+                <div class="form-group col-lg-6 col-md-6">
+                  <label>E-mail</label>
+                  <input type="email" placeholder="joe@email.com">
+                </div>
+                <div class="form-group col-lg-12 col-md-12">
+                  <label>Biography <small id="amenitiesHelp" class="form-text text-muted regular">(optional)</small></label>
+                  <textarea rows="5" placeholder="Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.."></textarea>
+                </div>
+                <div class="form-group col-lg-6 col-md-6">
+                  <i class="fa fa-facebook"></i>
+                  <label>Facebook</label>
+                  <input type="text" placeholder="https://www.facebook.com/">
+                </div>
+                <div class="form-group col-lg-6 col-md-6">
+                  <i class="fa fa-google-plus"></i>
+                  <label>Google Plus</label>
+                  <input type="text" placeholder="https://www.google.com/">
+                </div>
+                <div class="form-group col-lg-6 col-md-6">
+                  <i class="fa fa-twitter"></i>
+                  <label>Twitter</label>
+                  <input type="text" placeholder="https://www.twitter.com/">
+                </div>
+                <div class="form-group col-lg-6 col-md-6">
+                  <i class="fa fa-instagram"></i>
+                  <label>Instagram</label>
+                  <input type="text" placeholder="https://www.instagram.com/">
+                </div>
+              </form>
+              <button class="btn btn-primary btn-sm">Save changes</button>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 remove-padding" id="change-password">
+              <h3 class="regular">Change password</h3>
+              <form>
+                <div class="form-group">
+                  <div class="col-lg-6 col-md-6">
+                    <label>Current password</label>
+                    <input type="password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-lg-6 col-md-6">
+                    <label>New password</label>
+                    <input type="password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-lg-6 col-md-6">
+                    <label>Confirm new password</label>
+                    <input type="password">
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm">Change password</button>
+              </form>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/libraries/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/admin_pages.js"></script>
+  </body>
+
+</html>

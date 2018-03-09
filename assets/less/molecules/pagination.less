@@ -1,0 +1,43 @@
+/* Pagination style */
+.pagination-section {
+  nav {
+    text-align: center;
+  }
+  .pagination>li>a {
+    border-color: transparent;
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin: 0 3px;
+    color: @link--gray;
+    transition: all .4s;
+  }
+  .pagination>li>a:focus,
+  .pagination>li>a.next:focus,
+  .pagination>li>a.prev:focus {
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: @font--semibold;
+    color: @link--gray;
+  }
+  .pagination>li.active>a,
+  .pagination>li>a:hover {
+    color: @white;
+    background-color: @sky-blue;
+    border-color: transparent;
+    transition: all .4s;
+  }
+  .pagination>li>a.next,
+  .pagination>li>a.prev {
+    color: @link--gray;
+    transition: color .4s;
+    i {
+      font-weight: @font--semibold;
+      margin-right: 0;
+    }
+    &:hover {
+      color: @dark-gray;
+      background-color: transparent;
+      transition: color .4s;
+    }
+  }
+}

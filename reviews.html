@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Listed | Business Directory HTML Template</title>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/libraries/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libraries/bootstrap_rating/bootstrap-rating.css">
+    <link rel="stylesheet" href="assets/custom_libraries/rating/rating.css">
+    <link rel="stylesheet" href="assets/libraries/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="reviews">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs left-column remove-padding">
+          <div class="col-lg-12 col-md-12 logo">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Home"></a>
+          </div>
+          <div class="col-lg-12 col-md-12 user-menu">
+            <ul>
+              <li>
+                <h6 class="uppercase">Listings</h6>
+              </li>
+              <li>
+                <div id="accordionOne">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <a data-toggle="collapse" href="#collapseOne" class="white-link rotate-icon">
+                        <i class="fa fa-clone" aria-hidden="true"></i>
+                          My Listings
+                        <i class="fa fa-chevron-down rotate-icon-left"></i>
+                      </a>
+                    </div>
+                    <div id="collapseOne" class="collapse">
+                      <div class="card-body">
+                      <ul>
+                        <li>
+                          <a href="my_listings.html" class="white-link" id="my_listings_active">
+                            Active <span class="green-text">9</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="white-link" id="my_listings_pending">
+                            Pending <span class="yellow-text">2</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="white-link" id="my_listings_expired">
+                            Expired <span class="red-text">4</span>
+                          </a>
+                        </li>
+                      </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="reviews.html" class="white-link">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  Reviews
+                </a>
+              </li>
+              <li>
+                <a href="add_listing.html" class="white-link">
+                  <i class="fa fa-plus-square" aria-hidden="true"></i>
+                  Add Listing
+                </a>
+              </li>
+              <li>
+                <h6 class="uppercase">Account</h6>
+              </li>
+              <li>
+                <a href="my_profile.html" class="white-link">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                  My Profile
+                </a>
+              </li>
+              <li>
+                <a href="login.html" class="white-link">
+                  <i class="fa fa-power-off" aria-hidden="true"></i>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 right-column">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 top-content">
+              <div class="hidden-lg hidden-md hidden-sm user-second-menu">
+                <i class="material-icons slide-menu-icon">menu</i>
+                <div class="menu">
+                  <ul>
+                    <li>
+                      <h6 class="uppercase">Listings</h6>
+                    </li>
+                    <li>
+                      <div id="accordionTwo">
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <a data-toggle="collapse" href="#collapseTwo" class="white-link rotate-icon">
+                              <i class="fa fa-clone" aria-hidden="true"></i>
+                                My Listings
+                              <i class="fa fa-chevron-down rotate-icon-left"></i>
+                            </a>
+                          </div>
+                          <div id="collapseTwo" class="collapse">
+                            <div class="card-body">
+                            <ul>
+                              <li>
+                                <a href="my_listings.html" class="white-link" id="my_listings_active_two">
+                                  Active <span class="green-text">9</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="white-link" id="my_listings_pending_two">
+                                  Pending <span class="yellow-text">2</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="white-link" id="my_listings_expired_two">
+                                  Expired <span class="red-text">4</span>
+                                </a>
+                              </li>
+                            </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="reviews.html" class="white-link">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        Reviews
+                      </a>
+                    </li>
+                    <li>
+                      <a href="add_listing.html" class="white-link">
+                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                        Add Listing
+                      </a>
+                    </li>
+                    <li>
+                      <h6 class="uppercase">Account</h6>
+                    </li>
+                    <li>
+                      <a href="my_profile.html" class="white-link">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        My Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a href="login.html" class="white-link">
+                        <i class="fa fa-power-off" aria-hidden="true"></i>
+                        Logout
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <!-- Show logo in right-column only on mobile devices -->
+                <a href="index.html" class="hidden-lg hidden-md hidden-sm col-xs-4 logo left-align remove-padding"><img src="assets/images/logo.png" alt="Home"></a>
+                <!-- End show of logo image in right-column -->
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 remove-padding">
+                <!-- Collapse navbar -->
+                <div >
+                  <ul class="nav navbar-right">
+                    <li role="presentation" class="dropdown">
+                      <a class="dropdown-toggle header-link regular" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/images/user/user_1.jpg" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" alt="User">
+                         <span class="hidden-xs">
+                          Chow Ming Lee
+                          <i class="fa fa-chevron-down rotate-icon-top"></i>
+                        </span>
+                        <!-- Show icon for dropdown menu on mobile devices -->
+                        <i class="hidden-lg hidden-md hidden-sm material-icons">more_vert</i>
+                        <!-- End Show icon for dropdown menu on mobile devices -->
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li class="nav-item">
+                          <a class="nav-link" href="reviews.html"><i class="fa fa-star" aria-hidden="true"></i>Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="add_listing.html"><i class="fa fa-plus-square" aria-hidden="true"></i>Add listing</a>
+                        </li>
+                        <li>
+                          <hr />
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="my_profile.html"><i class="fa fa-user" aria-hidden="true"></i>My profile</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="login.html"><i class="fa fa-power-off" aria-hidden="true"></i>Logout</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End navbar -->
+                </div>
+              </div>
+          </div>
+          <!-- <div class="row"> -->
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3 class="uppercase">Reviews</h3>
+          </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 remove-padding" id="visitor-reviews">
+              <h3 class="regular">Visitor Reviews</h3>
+              <select class="form-control" name="category">
+                <option selected="selected">All listings</option>
+                <option value="01">Junior's Land</option>
+                <option value="02">Hickory Farms</option>
+                <option value="03">Xtreme Games</option>
+                <option value="04">North Star</option>
+              </select>
+              <div class="boxed-padding review-item">
+                <div class="row">
+                  <div class="col-sm-2 col-xs-3">
+                    <a href="#"><img src="assets/images/brands/amusement-park.png" alt="Entertainment" class="small"></a>
+                  </div>
+                  <div class="col-sm-10 col-xs-9">
+                    <div class="row bottom-margin">
+                      <div class="col-sm-8 bigger-text">
+                        <a href="#" class="dark-color">Chow Ming for </a>
+                        <a href="company.html">Junior's Land</a>
+                      </div>
+                      <div class="col-sm-4 desktop-text-right">
+                        <span class="text-muted small">July 27, 2016</span>
+                      </div>
+                    </div>
+                    <div class="dark-gray bold">It was awesome!!!!!</div>
+                    <input type="hidden" class="form-control rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="5" disabled="disabled">
+                    <p class="hidden-xs">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare convallis mollis. Mauris vulputate fringilla arcu at commodo. Vivamus laoreet mauris eget urna blandit hendrerit. Curabitur eu ex id mi consequat malesuada consequat vel risus.
+                    </p>
+                  </div>
+                  <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                    <p class="top-margin">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare convallis mollis. Mauris vulputate fringilla arcu at commodo. Vivamus laoreet mauris eget urna blandit hendrerit. Curabitur eu ex id mi consequat malesuada consequat vel risus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="boxed-padding review-item">
+                <div class="row">
+                  <div class="col-sm-2 col-xs-3">
+                    <a href="#"><img src="assets/images/brands/shop4.png" alt="Mall" class="small"></a>
+                  </div>
+                  <div class="col-sm-10 col-xs-9">
+                    <div class="row bottom-margin">
+                      <div class="col-sm-8 bigger-text">
+                        <a href="#" class="dark-color">Jane Fonda for </a>
+                        <a href="company.html">Hickory Farms</a>
+                      </div>
+                      <div class="col-sm-4 desktop-text-right">
+                        <span class="text-muted small">July 25, 2017</span>
+                      </div>
+                    </div>
+                    <div class="dark-gray bold">Very cool place</div>
+                    <input type="hidden" class="form-control rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="4" disabled="disabled">
+                    <p class="hidden-xs">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare convallis mollis. Mauris vulputate fringilla arcu at commodo. Vivamus laoreet mauris eget urna blandit hendrerit. Curabitur eu ex id mi consequat malesuada consequat vel risus.
+                    </p>
+                  </div>
+                  <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                    <p class="top-margin">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare convallis mollis. Mauris vulputate fringilla arcu at commodo. Vivamus laoreet mauris eget urna blandit hendrerit. Curabitur eu ex id mi consequat malesuada consequat vel risus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="boxed-padding review-item">
+                <div class="row">
+                  <div class="col-sm-2 col-xs-3">
+                    <a href="#"><img src="assets/images/brands/games.png" alt="Entertainment" class="small"></a>
+                  </div>
+                  <div class="col-sm-10 col-xs-9">
+                    <div class="row bottom-margin">
+                      <div class="col-sm-8 bigger-text">
+                        <a href="#" class="dark-color">Joe Dow for </a>
+                        <a href="company.html">Xtreme Games</a>
+                      </div>
+                      <div class="col-sm-4 desktop-text-right">
+                        <span class="text-muted small">July 29, 2017</span>
+                      </div>
+                    </div>
+                    <div class="dark-gray bold">Disapointing</div>
+                    <input type="hidden" class="form-control rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="1" disabled="disabled">
+                    <p class="hidden-xs">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare convallis mollis. Mauris vulputate fringilla arcu at commodo. Vivamus laoreet mauris eget urna blandit hendrerit. Curabitur eu ex id mi consequat malesuada consequat vel risus.
+                    </p>
+                  </div>
+                  <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                    <p class="top-margin">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare convallis mollis. Mauris vulputate fringilla arcu at commodo. Vivamus laoreet mauris eget urna blandit hendrerit. Curabitur eu ex id mi consequat malesuada consequat vel risus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="boxed-padding review-item">
+                <div class="row">
+                  <div class="col-sm-2 col-xs-3">
+                    <a href="#"><img src="assets/images/brands/hospital3.png" alt="Medical" class="small"></a>
+                  </div>
+                  <div class="col-sm-10 col-xs-9">
+                    <div class="row bottom-margin">
+                      <div class="col-sm-8 bigger-text">
+                        <a href="#" class="dark-color">Franz Small for </a>
+                        <a href="company.html">North Star</a>
+                      </div>
+                      <div class="col-sm-4 desktop-text-right">
+                        <span class="text-muted small">July 27, 2016</span>
+                      </div>
+                    </div>
+                    <div class="dark-gray bold">The condition where very good</div>
+                    <input type="hidden" class="form-control rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="4" disabled="disabled">
+                    <p class="hidden-xs">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare convallis mollis. Mauris vulputate fringilla arcu at commodo. Vivamus laoreet mauris eget urna blandit hendrerit. Curabitur eu ex id mi consequat malesuada consequat vel risus.
+                    </p>
+                  </div>
+                  <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                    <p class="top-margin">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare convallis mollis. Mauris vulputate fringilla arcu at commodo. Vivamus laoreet mauris eget urna blandit hendrerit. Curabitur eu ex id mi consequat malesuada consequat vel risus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination-section">
+                <nav aria-label="Page navigation">
+                  <ul class="pagination">
+                    <li>
+                      <a href="#" aria-label="Previous" class="prev">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li>
+                      <a href="#" aria-label="Next" class="next">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 remove-padding" id="your-reviews">
+              <h3 class="regular">Your Reviews</h3>
+              <div class="boxed-padding review-item">
+                <div class="row">
+                  <div class="col-sm-2 col-xs-3">
+                    <a href="#"><img src="assets/images/brands/food2.png" alt="Food" class="small"></a>
+                  </div>
+                  <div class="col-sm-10 col-xs-9">
+                    <div class="row bottom-margin">
+                      <div class="col-sm-8 bigger-text">
+                        <a href="#" class="dark-color">Your review for </a>
+                        <a href="company.html">Brian O'Neill's Irish Pub</a>
+                      </div>
+                      <div class="col-sm-4 desktop-text-right">
+                        <span class="text-muted small">July 27, 2016</span>
+                      </div>
+                    </div>
+                    <div class="dark-gray bold">The food and serving were at their very best</div>
+                    <input type="hidden" class="form-control rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="5" disabled="disabled">
+                    <p class="hidden-xs">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare convallis mollis. Mauris vulputate fringilla arcu at commodo. Vivamus laoreet mauris eget urna blandit hendrerit. Curabitur eu ex id mi consequat malesuada consequat vel risus.
+                    </p>
+                    <button class="btn btn-default btn-sm hidden-xs"><i class="material-icons">edit</i>Edit</button>
+                  </div>
+                  <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                    <p class="top-margin">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare convallis mollis. Mauris vulputate fringilla arcu at commodo. Vivamus laoreet mauris eget urna blandit hendrerit. Curabitur eu ex id mi consequat malesuada consequat vel risus.
+                    </p>
+                    <button class="btn btn-default btn-sm"><i class="material-icons">edit</i>Edit</button>
+                  </div>
+                </div>
+              </div>
+              <div class="boxed-padding review-item">
+                <div class="row">
+                  <div class="col-sm-2 col-xs-3">
+                    <a href="#"><img src="assets/images/brands/mall3.png" alt="Mall" class="small"></a>
+                  </div>
+                  <div class="col-sm-10 col-xs-9">
+                    <div class="row bottom-margin">
+                      <div class="col-sm-8 bigger-text">
+                        <a href="#" class="dark-color">Your review for </a>
+                        <a href="company.html">Cell Mall</a>
+                      </div>
+                      <div class="col-sm-4 desktop-text-right">
+                        <span class="text-muted small">July 27, 2016</span>
+                      </div>
+                    </div>
+                    <div class="dark-gray bold">Overall it was nice</div>
+                    <input type="hidden" class="form-control rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="4" disabled="disabled">
+                    <p class="hidden-xs">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare convallis mollis. Mauris vulputate fringilla arcu at commodo. Vivamus laoreet mauris eget urna blandit hendrerit. Curabitur eu ex id mi consequat malesuada consequat vel risus.
+                    </p>
+                    <button class="btn btn-default btn-sm hidden-xs"><i class="material-icons">edit</i>Edit</button>
+                  </div>
+                  <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                    <p class="top-margin">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare convallis mollis. Mauris vulputate fringilla arcu at commodo. Vivamus laoreet mauris eget urna blandit hendrerit. Curabitur eu ex id mi consequat malesuada consequat vel risus.
+                    </p>
+                    <button class="btn btn-default btn-sm"><i class="material-icons">edit</i>Edit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/libraries/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/libraries/bootstrap_rating/bootstrap-rating.js"></script>
+    <script src="assets/custom_libraries/rating/rating.js"></script>
+    <script src="assets/js/admin_pages.js"></script>
+  </body>
+
+</html>

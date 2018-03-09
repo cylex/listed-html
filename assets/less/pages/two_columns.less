@@ -1,0 +1,95 @@
+/* Two columns page alignment styling */
+.full-window-height {
+  position: relative;
+  .first-column {
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  @media (min-width: @screen-sm-min) {
+    .fixed-column {
+      position: fixed;
+      right: 0px;
+      height: 100% !important;
+      #map {
+        height: 100% !important;
+      }
+    }
+    .first-column {
+      -webkit-box-shadow: 10px 0px 15px -10px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 10px 0px 15px -10px rgba(0, 0, 0, 0.5);
+      box-shadow: 10px 0px 15px -10px rgba(0, 0, 0, 0.5);
+      z-index: 9;
+      height: 100% !important;
+    }
+    .box-with-bg-image {
+      &:first-child {
+        padding-right: 10px;
+      }
+      &:last-child {
+        padding-left: 10px;
+      }
+    }
+  }
+  @media (max-width: @screen-sm-min) {
+    .hidden-visibility {
+      visibility: hidden;
+      height: 0px;
+      overflow: hidden;
+    }
+  }
+}
+/* search list page - hide map until map buton is activated on mobile devices */
+body:not(.responsive-map) .search-list-map-visibility .fixed-column {
+  visibility: hidden;
+  height: 0px;
+  overflow: hidden;
+  &.show {
+    visibility: visible;
+  }
+}
+/**/
+.search-items > .boxed {
+  margin-bottom: 20px;
+  -webkit-transition: box-shadow 1s ease;
+  -moz-transition: box-shadow 1s ease;
+  -ms-transition: box-shadow 1s ease;
+  -o-transition: box-shadow 1s ease;
+  transition: box-shadow 1s ease;
+  &:hover {
+    -webkit-box-shadow: 0px 0px 20px 5px #dddddd;
+    -moz-box-shadow: 0px 0px 20px 5px #dddddd;
+    box-shadow: 0px 0px 20px 5px #dddddd;
+    -webkit-transition: box-shadow 0.5s ease;
+    -moz-transition: box-shadow 0.5s ease;
+    -ms-transition: box-shadow 0.5s ease;
+    -o-transition: box-shadow 0.5s ease;
+    transition: box-shadow 0.5s ease;
+  }
+  @media (max-width: @screen-sm-max) {
+    .circle-icon {
+      padding: 7px;
+      width: 50%;
+      height: auto;
+      float: left;
+      margin-left: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      background-color: transparent;
+      color: #a6a6a6;
+      span {
+        display: inline-block!important;
+      }
+    }
+    padding-bottom: 0;
+    .icon-buttons {
+      margin-left: -21px;
+      margin-right: -21px;
+      bottom: -1px;
+      position: relative;
+      margin-top: 15px;
+    }
+    .comp-details {
+      margin-top: 10px;
+    }
+  }
+}

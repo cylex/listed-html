@@ -1,0 +1,69 @@
+/*
+  Search and filters section styling
+*/
+//search and filters section - blog and article pages - mobile responsive
+.search-and-filters {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: -45px;
+  margin-bottom: 35px;
+  [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .btn {
+    float: left;
+    padding-right: 0;
+    padding-left: 0;
+    color: @gray;
+  }
+  .input-group .form-control {
+    border: none;
+    box-shadow: none;
+    padding-left: 0;
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: @dark-gray;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: @dark-gray;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: @dark-gray;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: @dark-gray;
+    }
+  }
+  .dropdown {
+    display: inline-block;
+    width: 100%;
+    .btn {
+      background-color: transparent;
+      font-weight: @font--regular;
+      color: @dark-gray;
+      float: right;
+    }
+    .fa {
+      color: @gray;
+      margin-right: 0;
+    }
+    .dropdown-menu {
+      background-color: @white;
+      padding: 5px 10px 10px;
+      h3 {
+        margin-top: 10px;
+      }
+      a {
+        display: block;
+        font-size: @font--small;
+        font-weight: @font--regular;
+        padding-bottom: 2px;
+      }
+    }
+    &.open {
+      .dropdown-menu {
+        right: 0;
+      }
+    }
+  }
+}

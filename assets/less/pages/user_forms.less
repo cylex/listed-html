@@ -1,0 +1,52 @@
+/* User form pages styling */
+.user-form {
+  background-image: url(../../assets/images/user/background/user-form-bg.jpg);
+  .white-block {
+    background-color: #fff;
+    border-radius: 3px;
+    max-width: 445px;
+    margin: auto;
+    margin-top: 10em;
+    margin-bottom: 10em;
+    height: 100%;
+    padding: 30px;
+  }
+  #wrapperOr {
+    text-align: center;
+    hr {
+      display: inline-block;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      margin-left: auto;
+      margin-right: auto;
+      border-style: inset;
+      border-width: 1px;
+      width: 34%;
+    }
+    span {
+      font-size: 1em;
+      font-weight: 400;
+      position: relative;
+      top: -5px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  input[type=checkbox] {
+    margin: 0;
+    position: relative;
+    top: 2px;
+  }
+}
+
+//* Responsive *//
+@media(max-width: @screen-xxs-max) {
+  .user-form {
+    .btn.btn-sm {
+      padding: 5px 10px;
+    }
+    #wrapperOr hr {
+      width: 30%;
+    }
+  }
+}

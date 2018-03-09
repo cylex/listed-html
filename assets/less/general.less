@@ -1,0 +1,231 @@
+/*
+  General styling and general classes
+*/
+html {
+  height: 100%;
+}
+body {
+  color: #777777;
+}
+.content {
+  position: relative;
+}
+.center-align {
+  text-align: center;
+}
+.left-align {
+  text-align: left;
+}
+.right-align {
+  text-align: right;
+}
+.overflow {
+  overflow-x: hidden;
+}
+.background-lighter-gray {
+  background-color: @background--lighter-gray;
+}
+.italic {
+  font-style: italic;
+}
+.regular {
+  font-weight: @font--regular;
+}
+.bold {
+  font-weight: @font--semibold;
+}
+.white {
+  color: @white;
+}
+.red {
+  color: @danger-red;
+}
+.green {
+  color: @grass-green;
+}
+.yellow {
+  color: @sun-yellow;
+}
+.dark-gray {
+  color: @dark-gray;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.remove-padding {
+  padding: 0;
+}
+.remove-top-padding {
+  padding-top: 0 !important;
+}
+.remove-top-padding-lg {
+  @media(max-width: 1200px) {
+    padding-top: 0 !important;
+  }
+}
+.remove-bottom-padding {
+  padding-bottom: 0 !important;
+}
+.negativ-margin-top {
+  margin-top: -30px;
+}
+.fa {
+  margin-right: 5px;
+  min-width: 15px;
+  text-align: center
+}
+.bottom-margin {
+  margin-bottom: 10px;
+}
+.top-margin {
+  margin-top: 10px;
+}
+.remove-top-margin {
+  margin-top: 0 !important;
+}
+.remove-bottom-margin {
+  margin-bottom: 0 !important;
+}
+.bottom-margin-big {
+  margin-bottom: 30px;
+}
+.top-margin-big {
+  margin-top: 30px;
+}
+.boxed {
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+}
+.box-with-shadow {
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 20px 5px #dddddd;
+  -moz-box-shadow: 0px 0px 20px 5px #dddddd;
+  box-shadow: 0px 0px 20px 5px #dddddd;
+}
+.boxed-padding {
+  padding: 20px;
+}
+.content-spacing {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.smaller-container {
+  max-width: 730px;
+}
+.border-bottom {
+  border-bottom: 1px solid #adadad;
+}
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.total-seach-results {
+  margin-left: 10px;
+  line-height: 2.4em;
+}
+.comp-details > div {
+  margin-bottom: 5px;
+}
+.padding-left {
+  padding-left: 20px;
+}
+.outer-div {
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+//Ordered list general styling
+ol {
+  counter-reset: item;
+}
+ol > li {
+  counter-increment: item;
+  padding-top: 5px;
+}
+ol ol > li {
+  display: block;
+}
+ol ol > li:before {
+  content: counters(item, ".") ". ";
+  margin-left: -20px;
+}
+//Leaflet Map - height of map on 'search' page
+body.responsive-map {
+  height: 100%;
+  > .content {
+    height: 100%;
+    > .container-fluid {
+      height: 100%;
+      > .full-window-height {
+          height: 100%;
+        > .fixed-column {
+            height: 100% !important;
+          > #map {
+            height: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}
+//Leaflet Map -height of map on 'search-list' page
+body.responsive-map {
+  height: 100%;
+  > .content {
+    height: 100%;
+    > .container {
+      height: 100%;
+     .row:nth-child(4) {
+        height: 100%;
+        .search-list-map-visibility {
+          height: 100%;
+          .fixed-column {
+            height: 100%;
+            #map {
+              height: 100% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/**/
+//* Responsive *//
+@media(max-width: @screen-sm-max) {
+  body {
+    font-size: 13px !important;
+  }
+  .section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  //Leaflet Map when content has section class and map is shown - eliminate section padding
+  body.responsive-map {
+    .section {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  /**/
+  ol > li {
+    font-size: @font--xsmall;
+  }
+  ol ol > li {
+    font-size: @font--small;
+  }
+  //for alignment only for mobile
+  .mobile-align-center {
+    text-align: center;
+  }
+}
+@media(min-width: @screen-sm-min) {
+  .desktop-text-right {
+    text-align: right;
+  }
+  //pagination text align left only from 768px up
+  .pagination-section.pagination-text-left nav {
+    text-align: left;
+  }
+}

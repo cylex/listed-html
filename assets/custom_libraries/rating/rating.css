@@ -1,0 +1,20 @@
+.rating-symbol .fa {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.rating-symbol .fa-star {
+  color: #fec047;
+}
+
+.rating-symbol .fa-star-o {
+  color: #b1b1b1;
+}
+
+.rating-symbol .fa-star-gray {
+  color: #dcdcdc;
+}
+
+.box-with-bg-image .fa-star {
+  margin: 0;
+}

@@ -1,0 +1,132 @@
+/* Links styling */
+a {
+  color: @link--primary;
+  font-weight: @font--semibold;
+  font-size: @font--base;
+  &:hover {
+    color: @link--primary_hover;
+    text-decoration: none;
+  }
+  &:focus {
+    color: @link--primary_hover;
+    text-decoration: none;
+  }
+  &.white-link {
+    color: @link--white;
+    &:hover {
+      color: @link--white_hover;
+    }
+  }
+  &.gray-link {
+    color: @link--gray;
+    &:hover {
+      color: @link--gray_hover;
+    }
+  }
+  &.border {
+    border-radius: 40px;
+    border: 2px solid @white;
+  }
+  &.header-link {
+    color: @link--header;
+    &:hover {
+      color: @link--header_hover;
+    }
+  }
+  &.footer-link {
+    color: @link--footer;
+    font-weight: @font--regular;
+    &:hover {
+      color: @link--footer_hover;
+    }
+  }
+  &.footer-social-link {
+    color: #d5d7df;
+    font-size: 2em;
+  }
+  &.with-element {
+    color: @white;
+    text-transform: uppercase;
+    &:hover {
+      color: @link--white_hover;
+    }
+    &:after {
+      padding: 5px 0px 8px 0px;
+      content: '';
+      display: block;
+      text-align: left;
+      border-bottom: 2px solid @white;
+      margin: 0;
+      width: 105px;
+    }
+  }
+  &.as-header {
+    color: @dark-gray;
+    &:hover {
+      color: @link--primary_hover;
+    }
+  }
+  //more-link
+  &.more-link {
+    text-align: center;
+    padding: 15px 0;
+    display: block;
+   //boxed more link
+    &.boxed {
+      padding: 5px 20px;
+      border-color: @sky-blue;
+      background-color: @white;
+      color: @sky-blue;
+      font-weight: @font--regular;
+      display: inline-block;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      &:hover {
+        background-color: @sky-blue;
+        color: @white;
+      }
+    }
+  }
+  /**/
+}
+//navbar links
+.navbar-default .navbar-nav > li > a {
+  color: @link--header;
+  font-weight: @font--semibold;
+  &:hover,
+  &:focus {
+    color: @link--header_hover;
+  }
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: @link--header;
+  background-color: transparent;
+  &:hover {
+    color: @link--header_hover;
+  }
+}
+.dropdown-menu > li > a {
+  color: @link--header;
+  font-weight: @font--semibold;
+  &:hover {
+    color: @link--header_hover;
+    background-color: transparent;
+  }
+}
+.navbar-nav.navbar-right:not(.sm-collapsible) a.circle-link {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 3px 10px !important;
+  margin: 5px;
+}
+
+// * Responsive * //
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: @link--header;
+  font-weight: @font--semibold;
+  &:hover {
+    color:  @link--header_hover;
+  }
+}

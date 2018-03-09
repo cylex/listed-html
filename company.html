@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Listed | Business Directory HTML Template</title>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libraries/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/libraries/smartmenu/addons/bootstrap/jquery.smartmenus.bootstrap.css"/>
+    <link href="assets/libraries/bootstrap_rating/bootstrap-rating.css" rel="stylesheet">
+    <link href="assets/custom_libraries/rating/rating.css" rel="stylesheet">
+    <!-- map -->
+    <link rel="stylesheet" href="assets/libraries/leaflet/leaflet.css"/>
+    <link rel="stylesheet" href="assets/custom_libraries/map/map.css"/>
+    <link rel="stylesheet" href="assets/libraries/awesome-markers/dist/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="assets/libraries/ionicons/css/ionicons.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/libraries/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/libraries/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/libraries/colorbox/colorbox.css"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900" rel="stylesheet">
+  </head>
+
+  <body class="nav-fixed">
+    <header>
+      <nav class="navbar navbar-default">
+        <div>
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5 navbar-header">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Home"></a>
+          </div>
+          <div id="header-second" class="col-lg-5 col-md-5 col-sm-9 text-right">
+            <button type="button" class="navbar-toggle pull-right visible-sm visible-xs collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+            </button>
+            <a href="#" class="visible-xs pull-right collapsed" data-toggle="collapse" data-target="#search-form" aria-expanded="false"><i class="fa fa-search" aria-hidden="true"></i></a>
+            <form id="search-form" class="navbar-form">
+              <input type="text" class="form-control" placeholder="Place or business">
+              <input type="text" class="form-control" placeholder="Location">
+              <a href="search.html" class="form-control btn btn-search btn-search-small"><i class="fa fa-search" aria-hidden="true"></i> <span>Search</span></a>
+            </form>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12">
+            <button type="button" class="navbar-toggle pull-right hidden-sm hidden-xs collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-collapse collapse collapsed" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="about-us.html">About Us</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle disabled-link disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="search.html">Listing details</a></li>
+                    <li><a href="search.html">Search v1</a></li>
+                    <li><a href="search-list.html">Search v2</a></li>
+                    <li><a href="company.html">Company</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="#" class="disabled">User panel <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="user.html">User page</a></li>
+                        <li><a href="my_listings.html">My listings</a></li>
+                        <li><a href="my_profile.html">My profile</a></li>
+                        <li><a href="add_listing.html">Add listing</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="coming-soon.html">Coming soon</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="terms-and-conditions.html">Terms and conditions</a></li>
+                    <li><a href="403.html">403 - Acces Denied</a></li>
+                    <li><a href="404.html">404 - Not Found</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle disabled-link disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Elements <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="tabs-buttons.html">Tabs & buttons</a></li>
+                    <li><a href="forms-messages.html">Forms & messages</a></li>
+                    <li><a href="countdowns-counters.html">Countdowns & Counters</a></li>
+                    <!-- <li role="separator" class="divider"></li> -->
+                    <li><a href="grid.html">Grid</a></li>
+                    <li><a href="icons.html">Icons</a></li>
+                    <li><a href="progress-bars.html">Progress Bars</a></li>
+                    <li><a href="sliders-galleries.html">Sliders & Galleries</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle disabled-link disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="blog.html">Blog list v1</a></li>
+                    <li><a href="blog_v2.html">Blog list v2</a></li>
+                    <li><a href="blog-categories.html">Blog category page</a></li>
+                    <li><a href="article-page.html">Article page v1</a></li>
+                    <li><a href="article-page_v2.html">Article page v2</a></li>
+                  </ul>
+                </li>
+                <li><a class="circle-link" href="login.html">Log In</a></li>
+                <li><a class="circle-link" href="sign-up.html">Sign Up</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div>
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+    <div class="content">
+      <div class="banner bg-overlay company container-fluid">
+        <div class="container banner-company-details white-text">
+          <div class="pull-left circle-with-background">
+            <img src="assets/images/business/pizza.png" alt="Mario's Pizza, Florida" class="x-small" />
+          </div>
+          <div class="col-xs-8 text-details">
+            <h1 class="smaller white-text">Mario's Pizza</h1>
+            <div class="small-text">Pizzeria</div>
+            <div class="rating-stars">
+              <input type="hidden" class="rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="2" disabled="disabled"/> <span class="white-text">(204 reviews)</span>
+            </div>
+            <div><i class="fa fa-clock-o" aria-hidden="true"></i> <b>Open</b> until 10:00 pm</div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content container section remove-top-padding">
+        <div class="row">
+          <div class="content__top-right col-md-4 col-md-push-8 col-sm-5 col-sm-push-7">
+            <div class="bullets negativ-margin-top">
+              <div class="icon-bullet">
+                <a href="#reviews" class="scroll-to-div">
+                  <i class="material-icons">comment</i>
+                </a>
+                <div class="bullet-text">Review</div>
+              </div>
+              <div class="icon-bullet">
+                <a class="visible-xs" href="tel:032-352-125"><i class="material-icons">call</i></a>
+                <a href="#phone" class="hidden-xs" data-toggle="modal" data-target="#phone">
+                  <i class="material-icons">call</i>
+                </a>
+                <div class="bullet-text">Phone</div>
+              </div>
+              <div class="icon-bullet">
+                <a class="visible-xs" href="mailto:contact@mpizza.com"><i class="material-icons">email</i></a>
+                <a href="#email" class="hidden-xs" data-toggle="modal" data-target="#email">
+                  <i class="material-icons">email</i>
+                </a>
+                <div class="bullet-text">Email</div>
+              </div>
+              <div class="icon-bullet">
+                <a href="https://www.google.com/maps?daddr=30.337959000000%2C-81.650421000000" target="_blank">
+                  <i class="material-icons">directions</i>
+                </a>
+                <div class="bullet-text">Get Directions</div>
+              </div>
+              <div class="icon-bullet">
+                <a href="http://www.travel-venture.com" target="_blank">
+                  <i class="material-icons">public</i>
+                </a>
+                <div class="bullet-text">Web</div>
+              </div>
+
+            </div>
+            <h2>Contact details</h2>
+            <p><i class="fa fa-map-marker"></i>4731 W Flagler St, Miami, FL 33134</p>
+            <p><i class="fa fa-phone"></i>014 - 235 356</p>
+            <p><i class="fa fa-envelope"></i>contact@mpizza.com</p>
+            <p><i class="fa fa-globe"></i>http://www.mario-pizza.com</p>
+          </div>
+          <div class="content__top-left col-md-8 col-md-pull-4 col-sm-7 col-sm-pull-5">
+            <ul class="breadcrumb hidden-xs">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="search.html">Restaurants and foods</a></li>
+              <li><a href="search.html">Miami</a></li>
+              <li><a href="search.html">Pizza</a></li>
+              <li class="dark-gray">Mario's Pizza, Florida</li>
+            </ul>
+            <h2>Description</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pretium nisi ut sodales porttitor. Phasellus id lorem laoreet, sodales ligula et, vehicula elit. Curabitur viverra finibus nulla vestibulum aliquet. Morbi malesuada, quam quis ornare auctor, nunc arcu mattis felis, at pulvinar diam neque sed orci. Nullam imperdiet egestas tortor ut sagittis. Quisque in rutrum tellus. Sed ut accumsan elit, sit amet ultricies metus. Nulla aliquet lacus nec elit suscipit, eu rhoncus arcu convallis.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Gallery</h2>
+            <div class="simple-gallery-slider">
+              <div>
+                <a class="group1 cboxElement" href="assets/images/company-gallery/big/comp_gallery_big_1.jpg">
+                  <img alt="Gallery" class="boxed" src="assets/images/company-gallery/comp_gallery_1.jpg">
+                </a>
+              </div>
+              <div>
+                <a class="group1 cboxElement" href="assets/images/company-gallery/big/comp_gallery_big_2.jpg">
+                  <img alt="Gallery" class="boxed" src="assets/images/company-gallery/comp_gallery_2.jpg">
+                </a>
+              </div>
+              <div>
+                <a class="group1 cboxElement" href="assets/images/company-gallery/big/comp_gallery_big_3.jpg">
+                  <img alt="Gallery" class="boxed" src="assets/images/company-gallery/comp_gallery_3.jpg">
+                </a>
+              </div>
+              <div>
+                <a class="group1 cboxElement" href="assets/images/company-gallery/big/comp_gallery_big_4.jpg">
+                  <img alt="Gallery" class="boxed" src="assets/images/company-gallery/comp_gallery_4.jpg">
+                </a>
+              </div>
+              <div>
+                <a class="group1 cboxElement" href="assets/images/company-gallery/big/comp_gallery_big_5.jpg">
+                  <img alt="Gallery" class="boxed" src="assets/images/company-gallery/comp_gallery_5.jpg">
+                </a>
+              </div>
+              <div>
+                <a class="group1 cboxElement" href="assets/images/company-gallery/big/comp_gallery_big_6.jpg">
+                  <img alt="Gallery" class="boxed" src="assets/images/company-gallery/comp_gallery_6.jpg">
+                </a>
+              </div>
+              <div>
+                <a class="group1 cboxElement" href="assets/images/company-gallery/big/comp_gallery_big_1.jpg">
+                  <img alt="Gallery" class="boxed" src="assets/images/company-gallery/comp_gallery_1.jpg">
+                </a>
+              </div>
+              <div>
+                <a class="group1 cboxElement" href="assets/images/company-gallery/big/comp_gallery_big_2.jpg">
+                  <img alt="Gallery" class="boxed" src="assets/images/company-gallery/comp_gallery_2.jpg">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="hidden-lg hidden-md hidden-sm col-xs-12 amenities">
+            <h2>Amenities</h2>
+            <div class="row">
+              <div class="col-sm-3 col-xs-6">
+                <a href="search.html" class="gray-link">
+                  <i class="fa fa-wifi"></i>Wi-Fi
+                </a>
+              </div>
+              <div class="col-sm-3 col-xs-6">
+                <a href="search.html" class="gray-link">
+                  <i class="fa fa-car"></i>Parking Place
+                </a>
+              </div>
+              <div class="col-sm-3 col-xs-6">
+                <a href="search.html" class="gray-link">
+                  <i class="fa fa-credit-card"></i>Card Payment
+                </a>
+              </div>
+              <div class="col-sm-3 col-xs-6">
+                <a href="search.html" class="gray-link">
+                  <i class="fa fa-gamepad"></i>Entertainment
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-push-8 col-sm-5 col-sm-push-7 col-xs-12">
+            <h2>Opening hours</h2>
+            <table class="table borderless without-padding opening-hours">
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>10:00 am - 10:30 pm</td>
+                </tr>
+                <tr class="primary-color bold">
+                  <td>Tuesday</td>
+                  <td>10:00 am - 10:30 pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>10:00 am - 10:30 pm</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>10:00 am - 10:30 pm</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>10:00 am - 10:30 pm</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>closed</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>closed</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2>Contact form</h2>
+            <form>
+              <div class="form-group">
+                <label for="inputName" class="control-label">Name</label>
+                <div>
+                  <input type="text" class="form-control" id="inputName">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputMail" class="control-label">E-mail</label>
+                <div>
+                  <input type="email" class="form-control" id="inputMail">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPhone" class="control-label">Phone number</label>
+                <div>
+                  <input type="text" class="form-control" id="inputPhone">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputMessageContactForm" class="control-label">Message </label>
+                <div>
+                  <textarea id="inputMessageContactForm" class="form-control" rows="5"></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i> Send</button>
+            </form>
+            <h2>Map</h2>
+            <div id="map" class="boxed" style="width: 100%; height: 360px;" ></div>
+          </div>
+          <div class="col-md-8 col-md-pull-4 col-sm-7 col-sm-pull-5 col-xs-12">
+            <div class="hidden-xs amenities">
+              <h2>Amenities</h2>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="amenity-item">
+                    <a href="search.html" class="gray-link">
+                      <i class="fa fa-wifi"></i>Wi-Fi
+                    </a>
+                  </div>
+                  <div class="amenity-item">
+                    <a href="search.html" class="gray-link">
+                      <i class="fa fa-car"></i>Parking Place
+                    </a>
+                  </div>
+                  <div class="amenity-item">
+                    <a href="search.html" class="gray-link">
+                      <i class="fa fa-credit-card"></i>Card Payment
+                    </a>
+                  </div>
+                  <div class="amenity-item">
+                    <a href="search.html" class="gray-link">
+                      <i class="fa fa-gamepad"></i>Entertainment
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="company-new-review">
+            <h2 id="reviews">Reviews</h2>
+            <button type="button" class="btn btn-default" id="add-review">Add new review</button>
+              <form class="boxed form-horizontal boxed-padding hide">
+                <div class="form-group">
+                  <label for="inputTitle" class="col-lg-2 col-sm-3 control-label">Title</label>
+                  <div class="col-lg-10 col-sm-9">
+                    <input type="text" class="form-control" id="inputTitle">
+                  </div>
+                </div>
+                <div class="form-group rating-stars">
+                  <label for="inputRating" class="col-lg-2 col-sm-3 control-label">Rating </label>
+                  <div class="col-lg-10 col-sm-9">
+                    <input id="inputRating" type="text" class="hidden form-control rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="3"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputMessageReviews" class="col-lg-2 col-sm-3 control-label">Message </label>
+                  <div class="col-lg-10 col-sm-9">
+                    <textarea id="inputMessageReviews" class="form-control" rows="8"></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Publish review</button>
+                <button type="button" class="btn btn-default" id="cancel-review">Cancel</button>
+              </form>
+            </div>
+            <div class="boxed boxed-padding review-item">
+              <div class="row">
+                <div class="col-sm-2 col-xs-2">
+                  <a href="#"><img src="assets/images/user/user_3.jpg" alt="Leroy McLorin" class="small circle"/></a>
+                </div>
+                <div class="col-sm-10 col-xs-10">
+                  <div class="row bottom-margin">
+                    <div class="col-sm-6">
+                      <a href="#" class="dark-color bigger-text">Leroy McLorin</a>
+                    </div>
+                    <div class="col-sm-6 desktop-text-right">
+                      <span class="text-muted small">September 22, 2017</span>
+                    </div>
+                  </div>
+                  <div class="dark-gray bold">Delicios pizza</div>
+                  <input type="hidden" class="form-control rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="2" disabled="disabled"/>
+                  <p class="hidden-xs">
+                    Mauris id consequat magna. Nunc elementum tellus nec nulla consequat maximus. Quisque et velit eu enim laoreet pretium. Cras condimentum, elit eget placerat feugiat, eros mi suscipit odio, at vulputate tortor nibh vitae augue. Aenean elementum est at feugiat fringilla.
+                  </p>
+                </div>
+                <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                  <p class="top-margin">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare convallis mollis. Mauris vulputate fringilla arcu at commodo. Vivamus laoreet mauris eget urna blandit hendrerit. Curabitur eu ex id mi consequat malesuada consequat vel risus.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="boxed boxed-padding review-item">
+              <div class="row">
+                <div class="col-sm-2 col-xs-2">
+                  <a href="#"><img src="assets/images/user/user_4.jpg" alt="Lawanda James" class="small circle"/></a>
+                </div>
+                <div class="col-sm-10 col-xs-10">
+                  <div class="row bottom-margin">
+                    <div class="col-sm-6">
+                      <a href="#" class="dark-color bigger-text">Lawanda James</a>
+                    </div>
+                    <div class="col-sm-6 desktop-text-right">
+                      <span class="text-muted small">October 27, 2016</span>
+                    </div>
+                  </div>
+                  <div class="dark-gray bold">Very cool place</div>
+                  <input type="hidden" class="form-control rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="2" disabled="disabled"/>
+                  <p class="hidden-xs">
+                    Mauris id consequat magna. Nunc elementum tellus nec nulla consequat maximus. Quisque et velit eu enim laoreet pretium. Cras condimentum, elit eget placerat feugiat, eros mi suscipit odio, at vulputate tortor nibh vitae augue. Aenean elementum est at feugiat fringilla.
+                  </p>
+                </div>
+                <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                  <p class="top-margin">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare convallis mollis. Mauris vulputate fringilla arcu at commodo. Vivamus laoreet mauris eget urna blandit hendrerit. Curabitur eu ex id mi consequat malesuada consequat vel risus.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="boxed boxed-padding review-item">
+              <div class="row">
+                <div class="col-sm-2 col-xs-2">
+                  <a href="#"><img src="assets/images/user/user_1.jpg" alt="Chow Ming" class="small circle"/></a>
+                </div>
+                <div class="col-sm-10 col-xs-10">
+                  <div class="row bottom-margin">
+                    <div class="col-sm-6">
+                      <a href="#" class="dark-color bigger-text">Chow Ming</a>
+                    </div>
+                    <div class="col-sm-6 desktop-text-right">
+                      <span class="text-muted small">October 07, 2016</span>
+                    </div>
+                  </div>
+                  <div class="dark-gray bold">It was awesome!!!</div>
+                  <input type="hidden" class="form-control rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="2" disabled="disabled"/>
+                  <p class="hidden-xs">
+                    Mauris id consequat magna. Nunc elementum tellus nec nulla consequat maximus. Quisque et velit eu enim laoreet pretium. Cras condimentum, elit eget placerat feugiat, eros mi suscipit odio, at vulputate tortor nibh vitae augue. Aenean elementum est at feugiat fringilla.
+                  </p>
+                </div>
+                <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                  <p class="top-margin">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare convallis mollis. Mauris vulputate fringilla arcu at commodo. Vivamus laoreet mauris eget urna blandit hendrerit. Curabitur eu ex id mi consequat malesuada consequat vel risus.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="boxed boxed-padding review-item">
+              <div class="row">
+                <div class="col-sm-2 col-xs-2">
+                  <a href="#"><img src="assets/images/user/default-user.png" alt="Jennifer Joy" class="small circle"/></a>
+                </div>
+                <div class="col-sm-10 col-xs-10">
+                  <div class="row bottom-margin">
+                    <div class="col-sm-6">
+                      <a href="#" class="dark-color bigger-text">Jennifer Joy</a>
+                    </div>
+                    <div class="col-sm-6 desktop-text-right">
+                      <span class="text-muted small">August 27, 2016</span>
+                    </div>
+                  </div>
+                  <div class="dark-gray bold">A little bit dissapointed</div>
+                  <input type="hidden" class="form-control rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="2" disabled="disabled"/>
+                  <p class="hidden-xs">
+                    Mauris id consequat magna. Nunc elementum tellus nec nulla consequat maximus. Quisque et velit eu enim laoreet pretium. Cras condimentum, elit eget placerat feugiat, eros mi suscipit odio, at vulputate tortor nibh vitae augue. Aenean elementum est at feugiat fringilla.
+                  </p>
+                </div>
+                <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                  <p class="top-margin">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare convallis mollis. Mauris vulputate fringilla arcu at commodo. Vivamus laoreet mauris eget urna blandit hendrerit. Curabitur eu ex id mi consequat malesuada consequat vel risus.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pagination-section pagination-text-left">
+              <nav aria-label="Page navigation">
+                <ul class="pagination">
+                  <li>
+                    <a href="#" aria-label="Previous" class="prev">
+                      <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li>
+                    <a href="#" aria-label="Next" class="next">
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div id="phone" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <b class="modal-title">Phone number</b>
+              </div>
+              <div class="modal-body">
+                <p>032 - 352 125</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Home" class="logo"></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend, mi vel dapibus tempor, sem nibh gravida turpis, a ultrices purus ex in orci.</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/" class="footer-social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://plus.google.com/" class="footer-social-link"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/" class="footer-social-link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 footer-menu">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 menu">
+                <h2 class="footer-element">Top Categories</h2>
+                <ul>
+                  <li><a href="search.html" class="footer-link">Food</a></li>
+                  <li><a href="search.html" class="footer-link">Shopping</a></li>
+                  <li><a href="search.html" class="footer-link">Clinics & Medical</a></li>
+                  <li><a href="search.html" class="footer-link">Entertainment</a></li>
+                  <li><a href="search.html" class="footer-link">Hotels & Travel</a></li>
+                  <li><a href="search.html" class="footer-link">Beauty & Salon</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 menu">
+                <h2 class="footer-element">Useful Links</h2>
+                <ul>
+                  <li><a href="about-us.html" class="footer-link">About Us</a></li>
+                  <li><a href="contact.html" class="footer-link">Contact</a></li>
+                  <li><a href="blog.html" class="footer-link">Blog</a></li>
+                  <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                  <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 menu">
+                <h2 class="footer-element">Legal</h2>
+                <ul>
+                  <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                  <li><a href="terms-and-conditions.html" class="footer-link">Terms & Conditions</a></li>
+                  <li><a href="#" class="footer-link">Legal Disclosure</a></li>
+                  <li><a href="#" class="footer-link">Use of Cookies</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2017. All rights reserved.</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/libraries/leaflet/leaflet.js"></script>
+    <script src="assets/libraries/awesome-markers/dist/leaflet.awesome-markers.js"></script>
+    <script src="assets/custom_libraries/map/map.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/scroll-to-div.js"></script>
+    <script src="assets/libraries/bootstrap_rating/bootstrap-rating.js"></script>
+    <script src="assets/libraries/smartmenu/jquery.smartmenus.js"></script>
+    <script src="assets/libraries/smartmenu/addons/bootstrap/jquery.smartmenus.bootstrap.js"></script>
+    <script src="assets/custom_libraries/rating/rating.js"></script>
+    <script src="assets/libraries/slick/slick.min.js"></script>
+    <script src="assets/libraries/colorbox/jquery.colorbox-min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/company_page.js"></script>
+  </body>
+
+</html>

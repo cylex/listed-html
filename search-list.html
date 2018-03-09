@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Listed | Business Directory HTML Template</title>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/libraries/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/libraries/smartmenu/addons/bootstrap/jquery.smartmenus.bootstrap.css"/>
+    <link href="assets/libraries/bootstrap_rating/bootstrap-rating.css" rel="stylesheet">
+    <link href="assets/custom_libraries/rating/rating.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libraries/leaflet/leaflet.css"/>
+    <link rel="stylesheet" href="assets/libraries/awesome-markers/dist/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="assets/custom_libraries/map/map.css"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900" rel="stylesheet"/>
+  </head>
+
+  <body class="nav-fixed">
+    <header>
+      <nav class="navbar navbar-default">
+        <div>
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5 navbar-header">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Home"></a>
+          </div>
+          <div id="header-second" class="col-lg-5 col-md-5 col-sm-9 text-right">
+            <button type="button" class="navbar-toggle pull-right visible-sm visible-xs collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+            </button>
+            <a href="#" class="visible-xs pull-right collapsed" data-toggle="collapse" data-target="#search-form" aria-expanded="false"><i class="fa fa-search" aria-hidden="true"></i></a>
+            <form id="search-form" class="navbar-form">
+              <input type="text" class="form-control" placeholder="Place or business">
+              <input type="text" class="form-control" placeholder="Location">
+              <a href="search.html" class="form-control btn btn-search btn-search-small"><i class="fa fa-search" aria-hidden="true"></i> <span>Search</span></a>
+            </form>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12">
+            <button type="button" class="navbar-toggle pull-right hidden-sm hidden-xs collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-collapse collapse collapsed" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="about-us.html">About Us</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle disabled-link disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="search.html">Listing details</a></li>
+                    <li><a href="search.html">Search v1</a></li>
+                    <li><a href="search-list.html">Search v2</a></li>
+                    <li><a href="company.html">Company</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="#" class="disabled">User panel <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="user.html">User page</a></li>
+                        <li><a href="my_listings.html">My listings</a></li>
+                        <li><a href="my_profile.html">My profile</a></li>
+                        <li><a href="add_listing.html">Add listing</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="coming-soon.html">Coming soon</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="terms-and-conditions.html">Terms and conditions</a></li>
+                    <li><a href="403.html">403 - Acces Denied</a></li>
+                    <li><a href="404.html">404 - Not Found</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle disabled-link disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Elements <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="tabs-buttons.html">Tabs & buttons</a></li>
+                    <li><a href="forms-messages.html">Forms & messages</a></li>
+                    <li><a href="countdowns-counters.html">Countdowns & Counters</a></li>
+                    <!-- <li role="separator" class="divider"></li> -->
+                    <li><a href="grid.html">Grid</a></li>
+                    <li><a href="icons.html">Icons</a></li>
+                    <li><a href="progress-bars.html">Progress Bars</a></li>
+                    <li><a href="sliders-galleries.html">Sliders & Galleries</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle disabled-link disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="blog.html">Blog list v1</a></li>
+                    <li><a href="blog_v2.html">Blog list v2</a></li>
+                    <li><a href="blog-categories.html">Blog category page</a></li>
+                    <li><a href="article-page.html">Article page v1</a></li>
+                    <li><a href="article-page_v2.html">Article page v2</a></li>
+                  </ul>
+                </li>
+                <li><a class="circle-link" href="login.html">Log In</a></li>
+                <li><a class="circle-link" href="sign-up.html">Sign Up</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div>
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+    <div class="content">
+      <div class="main-content container section">
+        <ul class="breadcrumb hidden-xs">
+          <li><a href="index.html">Home</a></li>
+          <li>New York</li>
+        </ul>
+        <div class="clearfix bottom-margin-big show-map">
+          <h1 class="pull-left smaller">Reviews<span class="text-muted"> in </span>New York</h1>
+          <span class="text-muted total-seach-results hidden-xs">(53 results)</span>
+        </div>
+        <div class="row">
+          <div class="hidden-lg hidden-md hidden-sm filter col-xs-12 bottom-margin show-map">
+            <button class="btn btn-blank filter-button">
+              <i class="fa fa-sliders" aria-hidden="true"></i> Filters
+            </button>
+            <button class="btn btn-blank map-button pull-right">
+              <i class="fa fa-map" aria-hidden="true"></i> Map
+            </button>
+            <button class="btn btn-blank list-button hidden-md hidden-lg hidden-sm pull-right hide">
+              <i class="fa fa-list" aria-hidden="true"></i> List
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-4 left-column__filter hidden-xs">
+            <h2 class="remove-top-margin">Nearby districts</h2>
+            <div class="checkbox checked">
+              <label><input type="checkbox" value=""><a href="search.html" class="gray-link regular">Los Angeles</a></label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked><a href="search.html" class="dark-gray">Miami</a></label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value=""><a href="search.html" class="gray-link regular">Houston</a></label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value=""><a href="search.html" class="gray-link regular">Jacksonville</a></label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value=""><a href="search.html" class="gray-link regular">New York</a></label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value=""><a href="search.html" class="gray-link regular">New Jersey</a></label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value=""><a href="search.html" class="gray-link regular">San Diego</a></label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value=""><a href="search.html" class="gray-link regular">San Francisco</a></label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value=""><a href="search.html" class="gray-link regular">Washington</a></label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value=""><a href="search.html" class="gray-link regular">Detroit</a></label>
+            </div>
+            <div class="collapse" id="collapseNearby">
+              <div class="checkbox">
+                <label><input type="checkbox" value=""><a href="search.html" class="gray-link regular">New Jersey</a></label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value=""><a href="search.html" class="gray-link regular">San Diego</a></label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value=""><a href="search.html" class="gray-link regular">San Francisco</a></label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value=""><a href="search.html" class="gray-link regular">Washington</a></label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value=""><a href="search.html" class="gray-link regular">Detroit</a></label>
+              </div>
+            </div>
+            <a data-toggle="collapse" href="#collapseNearby" aria-expanded="false" aria-controls="collapseNearby"  data-collapse-more-less="<i class='fa fa-angle-up' aria-hidden='true'></i>View less" class="italic"><i class="fa fa-angle-down italic" aria-hidden="true"></i>View more</a>
+            <h2>Top brands</h2>
+            <div class="checkbox">
+              <label><input type="checkbox" value=""><a href="company.html" class="gray-link regular">Mario's Pizza</a></label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value=""><a href="company.html" class="gray-link regular">Donut Hole</a></label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value=""><a href="company.html" class="gray-link regular">Shogun 22</a></label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value=""><a href="company.html" class="gray-link regular">Cubby Hole</a></label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value=""><a href="company.html" class="gray-link regular">North Castle</a></label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value=""><a href="company.html" class="gray-link regular">Brian O'neill's</a></label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value=""><a href="company.html" class="gray-link regular">Coffe House</a></label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value=""><a href="company.html" class="gray-link regular">Villa Paul Restaurant</a></label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value=""><a href="company.html" class="gray-link regular">Magic Kebab</a></label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value=""><a href="company.html" class="gray-link regular">Kosher Food</a></label>
+            </div>
+            <div class="collapse" id="collapseBrands">
+              <div class="checkbox">
+                <label><input type="checkbox" value=""><a href="company.html" class="gray-link regular">Coffe House</a></label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value=""><a href="company.html" class="gray-link regular">Villa Paul Restaurant</a></label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value=""><a href="company.html" class="gray-link regular">Magic Kebab</a></label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value=""><a href="company.html" class="gray-link regular">Kosher Food</a></label>
+              </div>
+            </div>
+            <a data-toggle="collapse" href="#collapseBrands" aria-expanded="false" aria-controls="collapseBrands" data-collapse-more-less="<i class='fa fa-angle-up' aria-hidden='true'></i>View less" class="italic"><i class="fa fa-angle-down italic" aria-hidden="true"></i>View more</a>
+          </div>
+          <div id="search-items-list">
+            <div class="col-md-9 col-sm-8">
+              <div class="search-items">
+                <div class="boxed boxed-padding" data-pin="0" data-point="51.941196,4.512291">
+                  <div class="row">
+                    <div class="col-md-2 col-sm-3 col-xs-3 hidden-xs">
+                      <a href="company.html">
+                        <img src="assets/images/brands/amusement-park.png" alt="Junior's Land" />
+                      </a>
+                    </div>
+                    <div class="col-md-6 col-sm-9 col-xs-12 ">
+                      <div class="row">
+                        <div class="visible-xs col-xs-3">
+                          <a href="company.html">
+                            <img src="assets/images/brands/amusement-park.png" alt="Junior's Land" />
+                          </a>
+                        </div>
+                        <div class="col-xs-9">
+                          <h3 class="remove-bottom-margin remove-top-margin"><a href="company.html">Junior's Land</a></h3>
+                          <div class="rating-stars visible-xs">
+                            <input type="hidden" class="rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="2" disabled="disabled"/> <span>42 reviews</span>
+                          </div>
+                          <div class="bottom-margin">
+                            <small>Entertainment, Fun, Social</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comp-details">
+                        <div><i class="fa fa-map-marker"></i>134 Madison Ave, New York, NY 10016</div>
+                        <div class="hidden-xs"><i class="fa fa-phone"></i>(024) - 359 485</div>
+                        <div><i class="fa fa-clock-o green"></i>Open until 11:00 PM</div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 desktop-text-right">
+                      <div class="icon-buttons">
+                        <a href="tel:0526115711" class="circle-icon icon-phone">
+                          <i class="fa fa-phone"></i>
+                          <span class="visible-xs">Call</span>
+                        </a>
+                        <a href="#" class="circle-icon">
+                          <i class="fa fa-bookmark-o"></i>
+                          <span class="visible-xs">Save</span>
+                        </a>
+                      </div>
+                      <div class="rating-stars hidden-xs">
+                        <input type="hidden" class="rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="3" disabled="disabled"/> <span>21 reviews</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="boxed boxed-padding" data-pin="1" data-point="51.927913,4.521303">
+                  <div class="row">
+                    <div class="col-md-2 col-sm-3 col-xs-3 hidden-xs">
+                      <a href="company.html">
+                        <img src="assets/images/brands/bowling.png" alt="The bowling place" />
+                      </a>
+                    </div>
+                    <div class="col-md-6 col-sm-9 col-xs-12 ">
+                      <div class="row">
+                        <div class="visible-xs col-xs-3">
+                          <a href="company.html">
+                            <img src="assets/images/brands/bowling.png" alt="The bowling place" />
+                          </a>
+                        </div>
+                        <div class="col-xs-9">
+                          <h3 class="remove-bottom-margin remove-top-margin"><a href="company.html">The Bowling Place</a></h3>
+                          <div class="rating-stars visible-xs">
+                            <input type="hidden" class="rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="2" disabled="disabled"/> <span>32 reviews</span>
+                          </div>
+                          <div class="bottom-margin">
+                            <small>Entertainment</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comp-details">
+                        <div><i class="fa fa-map-marker"></i>1060 Bolivar Rd, Cleveland, OH 44115</div>
+                        <div class="hidden-xs"><i class="fa fa-phone"></i>(052) 611-5711</div>
+                        <div><i class="fa fa-clock-o green"></i>Open until 11:00 PM</div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 desktop-text-right">
+                      <div class="icon-buttons">
+                        <a href="tel:0526115711" class="circle-icon icon-phone">
+                          <i class="fa fa-phone"></i>
+                          <span class="visible-xs">Call</span>
+                        </a>
+                        <a href="#" class="circle-icon">
+                          <i class="fa fa-bookmark-o"></i>
+                          <span class="visible-xs">Save</span>
+                        </a>
+                      </div>
+                      <div class="rating-stars hidden-xs">
+                        <input type="hidden" class="rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="4" disabled="disabled"/> <span>38 reviews</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="boxed boxed-padding" data-pin="2" data-point="51.936063,4.502077">
+                  <div class="row">
+                    <div class="col-md-2 col-sm-3 col-xs-3 hidden-xs ">
+                      <a href="company.html">
+                        <img src="assets/images/brands/food1.png" alt="Shogun 22" />
+                      </a>
+                    </div>
+                    <div class="col-md-6 col-sm-9 col-xs-12 ">
+                      <div class="row">
+                        <div class="visible-xs col-xs-3">
+                          <a href="company.html">
+                            <img src="assets/images/brands/food1.png" alt="Shogun 22" />
+                          </a>
+                        </div>
+                        <div class="col-xs-9">
+                          <h3 class="remove-bottom-margin remove-top-margin"><a href="company.html">Shogun 22</a></h3>
+                          <div class="rating-stars visible-xs">
+                            <input type="hidden" class="rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="3" disabled="disabled"/> <span>38 reviews</span>
+                          </div>
+                          <div class="bottom-margin">
+                            <small>Asian, Restaurant, Food</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comp-details">
+                        <div><i class="fa fa-map-marker"></i>4255 S San Pedro St, Los Angeles, CA 90011</div>
+                        <div class="hidden-xs"><i class="fa fa-phone"></i>(014) 352-589</div>
+                        <div><i class="fa fa-clock-o green"></i>Open until 11:00 PM</div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 desktop-text-right">
+                      <div class="icon-buttons">
+                        <a href="tel:5175484152" class="circle-icon icon-phone">
+                          <i class="fa fa-phone"></i>
+                          <span class="visible-xs">Call</span>
+                        </a>
+                        <a href="#" class="circle-icon">
+                          <i class="fa fa-bookmark-o"></i>
+                          <span class="visible-xs">Save</span>
+                        </a>
+                      </div>
+                      <div class="rating-stars hidden-xs">
+                        <input type="hidden" class="rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="3" disabled="disabled"/> <span>38 reviews</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="boxed boxed-padding" data-pin="3" data-point="51.932835,4.506969">
+                  <div class="row">
+                    <div class="col-md-2 col-sm-3 col-xs-3 hidden-xs">
+                      <a href="company.html">
+                        <img src="assets/images/brands/hotel2.png" alt="Indian Avenue" />
+                      </a>
+                    </div>
+                    <div class="col-md-6 col-sm-9 col-xs-12 ">
+                      <div class="row">
+                        <div class="visible-xs col-xs-3">
+                         <a href="company.html">
+                          <img src="assets/images/brands/hotel2.png" alt="Indian Avenue" />
+                        </a>
+                        </div>
+                        <div class="col-xs-9">
+                          <h3 class="remove-bottom-margin remove-top-margin"><a href="company.html">Indian Avenue</a></h3>
+                          <div class="rating-stars visible-xs">
+                            <input type="hidden" class="rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="2" disabled="disabled"/> <span>27 reviews</span>
+                          </div>
+                          <div class="bottom-margin">
+                            <small>Hotels & Travel</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comp-details">
+                        <div><i class="fa fa-map-marker"></i>1475 Sixth Ave, San Diego, CA 92101</div>
+                        <div class="hidden-xs"><i class="fa fa-phone"></i>(021) - 258 325</div>
+                        <div><i class="fa fa-clock-o green"></i>Open until 11:00 PM</div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 desktop-text-right">
+                      <div class="icon-buttons">
+                        <a href="tel:0526115711" class="circle-icon icon-phone">
+                          <i class="fa fa-phone"></i>
+                          <span class="visible-xs">Call</span>
+                        </a>
+                        <a href="#" class="circle-icon">
+                          <i class="fa fa-bookmark-o"></i>
+                          <span class="visible-xs">Save</span>
+                        </a>
+                      </div>
+                      <div class="rating-stars hidden-xs">
+                        <input type="hidden" class="rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="4" disabled="disabled"/> <span>27 reviews</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="boxed boxed-padding" data-pin="4" data-point="51.930295,4.515209">
+                  <div class="row">
+                    <div class="col-md-2 col-sm-3 col-xs-3 hidden-xs">
+                      <a href="company.html">
+                        <img src="assets/images/brands/mall3.png" alt="Cell Mall" />
+                      </a>
+                    </div>
+                    <div class="col-md-6 col-sm-9 col-xs-12 ">
+                      <div class="row">
+                        <div class="visible-xs col-xs-3">
+                          <a href="company.html">
+                            <img src="assets/images/brands/mall3.png" alt="Cell Mall" />
+                          </a>
+                        </div>
+                        <div class="col-xs-9">
+                          <h3 class="remove-bottom-margin remove-top-margin"><a href="company.html">Cell Mall</a></h3>
+                          <div class="rating-stars visible-xs">
+                            <input type="hidden" class="rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="4" disabled="disabled"/> <span>27 reviews</span>
+                          </div>
+                          <div class="bottom-margin">
+                            <small>Shopping</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comp-details">
+                        <div><i class="fa fa-map-marker"></i>146 Worth St, New York, NY 10013</div>
+                        <div class="hidden-xs"><i class="fa fa-phone"></i>(025) - 354 785</div>
+                        <div><i class="fa fa-clock-o green"></i>Open until 11:00 PM</div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 desktop-text-right">
+                      <div class="icon-buttons">
+                        <a href="tel:0526115711" class="circle-icon icon-phone">
+                          <i class="fa fa-phone"></i>
+                          <span class="visible-xs">Call</span>
+                        </a>
+                        <a href="#" class="circle-icon">
+                          <i class="fa fa-bookmark-o"></i>
+                          <span class="visible-xs">Save</span>
+                        </a>
+                      </div>
+                      <div class="rating-stars hidden-xs">
+                        <input type="hidden" class="rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="5" disabled="disabled"/> <span>42 reviews</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="boxed boxed-padding" data-pin="5" data-point="51.930083,4.507742">
+                  <div class="row">
+                    <div class="col-md-2 col-sm-3 col-xs-3 hidden-xs">
+                      <a href="company.html">
+                        <img src="assets/images/brands/salon2.png" alt="Short Cuts" />
+                      </a>
+                    </div>
+                    <div class="col-md-6 col-sm-9 col-xs-12 ">
+                      <div class="row">
+                        <div class="visible-xs col-xs-3">
+                          <a href="company.html">
+                            <img src="assets/images/brands/salon2.png" alt="Short Cuts" />
+                          </a>
+                        </div>
+                        <div class="col-xs-9">
+                          <h3 class="remove-bottom-margin remove-top-margin"><a href="company.html">Short Cuts</a></h3>
+                          <div class="rating-stars visible-xs">
+                            <input type="hidden" class="rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="3" disabled="disabled"/> <span>42 reviews</span>
+                          </div>
+                          <div class="bottom-margin">
+                            <small>Beauty & Salon</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comp-details">
+                        <div><i class="fa fa-map-marker"></i>8190 Miramar Rd, San Diego, CA 92126</div>
+                        <div class="hidden-xs"><i class="fa fa-phone"></i>(259) - 711 255</div>
+                        <div><i class="fa fa-clock-o green"></i>Open until 11:00 PM</div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 desktop-text-right">
+                      <div class="icon-buttons">
+                        <a href="tel:0526115711" class="circle-icon icon-phone">
+                          <i class="fa fa-phone"></i>
+                          <span class="visible-xs">Call</span>
+                        </a>
+                        <a href="#" class="circle-icon">
+                          <i class="fa fa-bookmark-o"></i>
+                          <span class="visible-xs">Save</span>
+                        </a>
+                      </div>
+                      <div class="rating-stars hidden-xs">
+                        <input type="hidden" class="rating-tooltip-manual" data-filled="fa fa-star" data-empty="fa fa-star fa-star-gray" data-fractions="1" value="3" disabled="disabled"/> <span>27 reviews</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination-section pagination-text-left">
+                <nav aria-label="Page navigation">
+                  <ul class="pagination">
+                    <li>
+                      <a href="#" aria-label="Previous" class="prev">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li>
+                      <a href="#" aria-label="Next" class="next">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="search-list-map-visibility">
+            <div class="column col-sm-5 remove-padding fixed-column">
+              <div id="map" style="z-index: 4;"></div>
+              <div>
+                <button class="btn btn-blank list-button map-list-button hidden-md hidden-lg hidden-sm col-xs-3 hide">
+                  <i class="fa fa-list" aria-hidden="true"></i> List
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Home" class="logo"></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend, mi vel dapibus tempor, sem nibh gravida turpis, a ultrices purus ex in orci.</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/" class="footer-social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://plus.google.com/" class="footer-social-link"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/" class="footer-social-link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 footer-menu">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 menu">
+                <h2 class="footer-element">Top Categories</h2>
+                <ul>
+                  <li><a href="search.html" class="footer-link">Food</a></li>
+                  <li><a href="search.html" class="footer-link">Shopping</a></li>
+                  <li><a href="search.html" class="footer-link">Clinics & Medical</a></li>
+                  <li><a href="search.html" class="footer-link">Entertainment</a></li>
+                  <li><a href="search.html" class="footer-link">Hotels & Travel</a></li>
+                  <li><a href="search.html" class="footer-link">Beauty & Salon</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 menu">
+                <h2 class="footer-element">Useful Links</h2>
+                <ul>
+                  <li><a href="about-us.html" class="footer-link">About Us</a></li>
+                  <li><a href="contact.html" class="footer-link">Contact</a></li>
+                  <li><a href="blog.html" class="footer-link">Blog</a></li>
+                  <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                  <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 menu">
+                <h2 class="footer-element">Legal</h2>
+                <ul>
+                  <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                  <li><a href="terms-and-conditions.html" class="footer-link">Terms & Conditions</a></li>
+                  <li><a href="#" class="footer-link">Legal Disclosure</a></li>
+                  <li><a href="#" class="footer-link">Use of Cookies</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2017. All rights reserved.</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/search_page.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/more-less.js"></script>
+    <script src="assets/libraries/leaflet/leaflet.js"></script>
+    <script src="assets/libraries/awesome-markers/dist/leaflet.awesome-markers.js"></script>
+    <script src="assets/custom_libraries/map/map.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/libraries/smartmenu/jquery.smartmenus.js"></script>
+    <script src="assets/libraries/smartmenu/addons/bootstrap/jquery.smartmenus.bootstrap.js"></script>
+    <script src="assets/libraries/bootstrap_rating/bootstrap-rating.js"></script>
+    <script src="assets/custom_libraries/rating/rating.js"></script>
+  </body>
+
+</html>

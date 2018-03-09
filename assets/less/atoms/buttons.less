@@ -1,0 +1,237 @@
+/* Buttons styling */
+.btn {
+  font-size: 1.067em;
+  padding: 9px 30px;
+  border-radius: 3px;
+  line-height: initial;
+  font-weight: 600;
+  &.btn-default {
+    background-color: #fff;
+    border: 1px solid @button-primary-color;
+    color: @button-primary-color;
+    &:hover {
+      background-color: @button-primary-color;
+      color: #fff;
+    }
+  }
+  &.btn-primary {
+    background-color: @button-primary-color;
+    border: 1px solid @button-primary-color;
+    color: #fff;
+    &:hover {
+      background-color: darken(@button-primary-color, 20%);
+    }
+  }
+  &.btn-xs {
+    padding: 5px 25px;
+    position: relative;
+    top: 0px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 34px;
+    &:before {
+      content: none;
+    }
+    &:hover {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+  &.btn-blank {
+    background-color: transparent;
+    border: none;
+  }
+  &.btn-lg {
+    font-size: 1.333em;
+    padding: 9px 70px;
+  }
+  &.btn-sm {
+    font-weight: normal;
+    padding: 5px 25px;
+    font-size: 1em;
+  }
+  &.btn-multiline-text {
+    white-space: normal;
+    padding: 10px 2px;
+  }
+}
+//search button
+.btn.btn-search {
+  line-height: 20px;
+  background-color: @search-button;
+  color: @dark-gray;
+  font-size: @font--base;
+  font-weight: @font--semibold;
+  &:hover {
+    background-color: @search-button-hover;
+  }
+  &.btn-search-small {
+    padding: 5px;
+    i {
+      line-height: 28px;
+    }
+  }
+}
+.form-control {
+  border-radius: 5px;
+}
+.btn-group {
+  .btn.btn-default, a {
+    border-radius: 0px;
+    color: @link--gray;
+    font-weight: 600;
+    background-color: #fff;
+    border-color: #ccc;
+    &:hover {
+      background-color: transparent;
+      border-color: #ccc;
+      color:@link--gray_hover;
+    }
+  }
+  .btn a {
+    display: block;
+  }
+}
+.btn.btn-blank {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1.067em;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+.btn.btn-facebook {
+  background-color: #3b5998;
+  color: #fff;
+  font-weight: 600;
+  &:hover {
+    background-color: darken(#3b5998, 10%);
+  }
+}
+.btn.btn-google {
+  background-color: #dd4b39;
+  color: #fff;
+  font-weight: 600;
+  &:hover {
+    background-color: darken(#dd4b39, 10%);
+  }
+}
+//slick slider arrows
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  top: 40%;
+  &:before {
+    font: 40px/1 'FontAwesome';
+    color: #ccc;
+  }
+}
+.slick-prev {
+  left: 25px;
+  &:before {
+    content: "\f104";
+  }
+}
+.slick-next {
+  right: 25px;
+  &:before {
+    content: "\f105";
+  }
+}
+/**/
+//slick slider buttons
+.slick-dots li {
+  width: 15px;
+  height: 15px;
+  button {
+    width: 15px;
+    height: 15px;
+    background: @gray80;
+    border: 1px solid @gray80;
+    border-radius: 100px;
+    &:before {
+      color: @gray80;
+    }
+    &:hover {
+      background: @white;
+      &:before {
+        color: @white;
+      }
+    }
+  }
+}
+.slick-dots li.slick-active button {
+  background: @white;
+  &:before {
+    color: @white;
+    opacity: 0;
+  }
+}
+/**/
+//Home page search form on banner section
+.banner.home {
+  .navbar-form .btn.btn-search {
+    line-height: 25px;
+    font-size: 18px;
+    i {
+      max-width: 25px;
+    }
+    span {
+      position: relative;
+      top: -5px;
+    }
+  }
+}
+/**/
+//Button with round border
+.btn-circle {
+  border-radius: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/**/
+//search pages - list button that appears when the map is shown on mobile devices
+.map-list-button {
+  position: absolute;
+  bottom: -1px;
+  left: 40%;
+  z-index: 5;
+  border-radius: 5px 5px 0 0;
+  color: @dark-gray;
+  &.btn.btn-blank {
+    background-color: @white;
+    padding: 5px 10px;
+    margin-bottom: 0;
+    font-size: @font--large;
+    border: 1px solid @gray80;
+  }
+}
+/**/
+
+// * Responsive * //
+@media(max-width: @screen-xxs-max) {
+  //slick slider buttons
+  .slick-prev {
+    left: 5px;
+  }
+  .slick-next {
+    right: 5px;
+  }
+  /**/
+}
+@media(max-width: @screen-sm-max) {
+  .btn {
+    padding: 9px 10px;
+    &.btn-search {
+      width: 100%;
+    }
+    &.btn-xs {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+  }
+}
+

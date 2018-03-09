@@ -1,0 +1,272 @@
+/*
+  Galleries styling
+*/
+
+//Static galleries with image and title link
+.image-gallery-static {
+  // border-bottom: 1px solid @gray80;
+  h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  a.static-element {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    &:hover {
+      &:after {
+        background: rgba(0,0,0,0.6);
+      }
+    }
+    &:after {
+      position: absolute;
+      opacity: 1;
+      transition: all 0.5s;
+      content: '';
+      height: 100%;
+      width: 100%;
+      background: rgba(0,0,0,0.3);
+      top: 0;
+      left: 0;
+    }
+  }
+  span {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    color: @link--white;
+    text-transform: uppercase;
+    font-weight: @font--semibold;
+    font-size: @font--xxlarge;
+    z-index: 2;
+    text-align: center;
+  }
+}
+//content intro gallery
+//animations
+.content-intro-gallery {
+  .intro {
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    &:hover {
+      -moz-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      -o-transform: translateY(-5px);
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+  }
+}
+//blog list page
+.content-intro-gallery {
+  [class*=col-] {
+    padding-top: 15px;
+  }
+  h2 {
+    margin-bottom: 15px;
+  }
+  .intro-text {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    left: 0;
+    h3 {
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+  .second {
+    padding: 0;
+  }
+  .intro {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0px;
+      left: 0;
+      width: 100%;
+      background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+      background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+      cursor: pointer;
+    }
+    a.link-image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    a.text-link {
+      background-color: @sky-blue;
+      color: @white;
+      font-weight: @font--regular;
+      padding: 1px 8px;
+      float: right;
+      margin-right: 20px;
+      font-size: @font--small;
+      &:hover {
+        background-color: @cloudy-blue;
+      }
+      &:before {
+        content: '\f02b';
+        font-family: FontAwesome;
+        color: @white;
+        padding-right: 5px;
+      }
+    }
+  }
+  .intro-big {
+    min-height: 505px;
+  }
+  .intro-small {
+    min-height: 245px;
+  }
+  &.blog-gallery .intro-one {
+    background-image: url('../../assets/images/blog/top-1.jpg');
+  }
+  &.blog-gallery .intro-two {
+    background-image: url('../../assets/images/blog/top-2.jpg');
+  }
+  &.blog-gallery .intro-three {
+    background-image: url('../../assets/images/blog/top-3.jpg');
+  }
+  &.blog-gallery .intro-four {
+    background-image: url('../../assets/images/blog/top-4.jpg');
+  }
+  &.blog-gallery .intro-five {
+    background-image: url('../../assets/images/blog/top-5.jpg');
+  }
+  &.location-gallery .intro-one {
+    background-image: url('../../assets/images/location/New-York.jpg');
+  }
+  &.location-gallery .intro-two {
+    background-image: url('../../assets/images/location/Los-Angeles.jpg');
+  }
+  &.location-gallery .intro-three {
+    background-image: url('../../assets/images/location/Houston.jpg');
+  }
+  &.location-gallery .intro-four {
+    background-image: url('../../assets/images/location/San-Antonio.jpg');
+  }
+  &.location-gallery .intro-five {
+    background-image: url('../../assets/images/location/San-Diego.jpg');
+  }
+  &.location-gallery .intro-six {
+    background-image: url('../../assets/images/location/Jacksonville.jpg');
+  }
+  &.categories-gallery .intro-one {
+    background-image: url('../../assets/images/categories/grid-gallery/food.jpg');
+  }
+  &.categories-gallery .intro-two {
+    background-image: url('../../assets/images/categories/grid-gallery/hotels.jpg');
+  }
+  &.categories-gallery .intro-three {
+    background-image: url('../../assets/images/categories/grid-gallery/clinics.jpg');
+  }
+  &.categories-gallery .intro-four {
+    background-image: url('../../assets/images/categories/grid-gallery/beauty.jpg');
+  }
+  &.categories-gallery .intro-five {
+    background-image: url('../../assets/images/categories/grid-gallery/entertainment.jpg');
+  }
+  &.categories-gallery .intro-six {
+    background-image: url('../../assets/images/categories/grid-gallery/shopping.jpg');
+  }
+  span {
+    font-size: @font--medium;
+  }
+}
+
+//* Responsive *//
+@media(max-width: @screen-md-max) {
+ .content-intro-gallery {
+    .intro-big,
+    .intro-small {
+      min-height: 250px;
+    }
+  }
+}
+@media(max-width: @screen-sm-max) {
+  .image-gallery-static {
+    .container .row [class*=col-] {
+      &:nth-child(odd) {
+        padding-right: 5px;
+      }
+      &:nth-child(even) {
+        padding-left: 5px;
+      }
+    }
+    a.static-element {
+      margin-bottom: 10px;
+    }
+  }
+}
+@media(max-width: @screen-xs-max) {
+  .image-gallery-static {
+    span {
+      font-size: @font--large;
+    }
+  }
+  .content-intro-gallery {
+    .intro {
+      a.text-link {
+        margin-right: 0;
+      }
+    }
+  }
+}
+@media(min-width: @screen-sm-min) {
+  .content-intro-gallery {
+    .first {
+      padding-right: 0;
+    }
+    .second {
+      padding: 0;
+    }
+    .third,
+    .fourth {
+      padding-right: 0;
+    }
+  }
+}
+@media(min-width: @screen-lg-min) {
+  .content-intro-gallery {
+    .intro {
+      .right-align {
+        text-align: right;
+      }
+    }
+    .sixth {
+      padding-left: 0;
+    }
+    .intro-text {
+      .right {
+        text-align: right;
+      }
+    }
+  }
+}
+@media(min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+  .content-intro-gallery {
+    .first {
+      padding-right: 15px;
+    }
+    .second {
+      [class*=col-]:first-child {
+        padding-right: 0;
+      }
+    }
+  }
+}

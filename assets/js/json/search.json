@@ -1,0 +1,43 @@
+{"item1": {
+  "lat":"51.941196",
+    "lon": "4.512291",
+    "icon": "info",
+    "markerColor": "red",
+    "popupContent": "<div class=\"rating-stars\"><input type=\"hidden\" class=\"rating-tooltip-manual\" data-filled=\"fa fa-star\" data-empty=\"fa fa-star fa-star-gray\" value=\"3\"/></div><a href=\"#\"><img src=\"assets/images/brands/amusement-park.png\" class=\"x-small pull-left\"></a><a href=\"#\"><strong>Junior's Land, New York</strong></a><div> 134 Madison Ave, New York, NY 10016, United States</div><div>Currently open!</div>"
+  },
+  "item2": {
+    "lat":"51.927913",
+    "lon": "4.521303",
+    "icon": "info",
+    "markerColor": "red",
+    "popupContent": "<a href=\"#\"><img src=\"assets/images/brands/bowling.png\" class=\"x-small pull-left\"></a><a href=\"#\"><strong>The Bowling Place, Ohio</strong></a> <div> 1060 Bolivar Rd, Cleveland, OH 44115, United States</div><div>Currently open!</div>"
+  },
+  "item3": {
+    "lat":"51.936063",
+    "lon": "4.502077",
+    "icon": "cutlery",
+    "markerColor": "green",
+    "popupContent": "<a href=\"#\"><img src=\"assets/images/brands/food1.png\" class=\"x-small pull-left\"></a><a href=\"#\"><strong>Shogun 22 - Asian Food, California</strong></a> <div> 4255 S San Pedro St, Los Angeles, CA 90011, United States</div><div>Currently open!</div>"
+  },
+  "item4": {
+    "lat":"51.932835",
+    "lon": "4.506969",
+    "icon": "building",
+    "markerColor": "purple",
+    "popupContent": "<a href=\"#\"><img src=\"assets/images/brands/hotel2.png\" class=\"x-small pull-left\"></a><a href=\"#\"><strong>Indian Avenue, California</strong></a> <div> 1475 Sixth Ave, San Diego, CA 92101, United States</div><div>Currently open!</div>"
+  },
+  "item6": {
+    "lat":"51.930295",
+    "lon": "4.515209",
+    "icon": "shopping-bag",
+    "markerColor": "blue",
+    "popupContent": "<a href=\"#\"><img src=\"assets/images/brands/mall3.png\" class=\"x-small pull-left\"></a><a href=\"#\"><strong>Cell Mall, New York</strong></a> <div> 146 Worth St, New York, NY 10013, United States</div><div>Currently open!</div>"
+  },
+  "item7": {
+    "lat":"51.930083",
+    "lon": "4.507742",
+    "icon": "scissors",
+    "markerColor": "light-blue",
+    "popupContent": "<a href=\"#\"><img src=\"assets/images/brands/salon2.png\" class=\"x-small pull-left\"></a><a href=\"#\"><strong>Short Cuts, California</strong></a> <div> 8190 Miramar Rd, San Diego, CA 92126, United States</div><div>Currently open!</div>"
+  }
+}

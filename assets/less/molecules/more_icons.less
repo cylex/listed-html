@@ -1,0 +1,101 @@
+/*
+  Another icon set styling
+*/
+.bullets {
+  .icon-bullet {
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 3;
+    top: 0;
+    -webkit-transition-property: top, bottom;
+    -webkit-transition-duration: 0.2s;
+    > a {
+      color: @light-gray;
+      display: block;
+      &:focus {
+        outline: none;
+      }
+      i {
+        background-color: #fff;
+        border-radius: 100%;
+        -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.4);
+        padding: 15px;
+        font-size: 25px;
+        width: 55px;
+        height: 55px;
+      }
+    }
+    .bullet-text {
+      opacity: 0;
+      -webkit-transition: opacity 0.2s ease-in-out;
+      -moz-transition: opacity 0.2s ease-in-out;
+      -o-transition: opacity 0.2s ease-in-out;
+      transition: opacity 0.2s ease-in-out;
+      position: absolute;
+      left: -55%;
+      width: 125px;
+      font-weight: 600;
+      font-size: 0.867em;
+      color: @link--primary;
+      margin-top: 10px;
+    }
+    &:hover {
+      top: -10px;
+      .bullet-text {
+        display: block;
+      }
+      a {
+        color: @link--primary;
+      }
+      .bullet-text {
+        opacity: 1;
+      }
+    }
+  }
+}
+.circle-icon {
+  margin-bottom: 5px;
+  border-radius: 100%;
+  display: inline-block;
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  color: #a6a6a6;
+  font-size: 18px;
+  margin-left: 10px;
+  i {
+    margin-right: 0;
+  }
+  &.icon-phone {
+    background-color: @link--primary;
+    color: #fff;
+  }
+}
+
+//* Responsive *//
+@media(max-width: @screen-lg-max) {
+  .bullets {
+    .icon-bullet {
+      margin-right: 5px;
+      top: 5px;
+      > a {
+        i {
+          padding: 13px;
+          font-size: 20px;
+          width: 45px;
+          height: 45px;
+        }
+      }
+      .bullet-text {
+        left: -85%;
+      }
+    }
+  }
+}

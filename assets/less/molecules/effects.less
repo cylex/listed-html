@@ -1,0 +1,21 @@
+/*
+  Effects styling
+*/
+//grayscale on hover show real
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  &:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+}
+//transition scale in and out
+.transition {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+  }
+}

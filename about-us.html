@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Listed | Business Directory HTML Template</title>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libraries/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/custom_libraries/progressbar/progress-animate.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/libraries/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/libraries/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/libraries/smartmenu/addons/bootstrap/jquery.smartmenus.bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900" rel="stylesheet">
+  </head>
+
+  <body class="overflow nav-fixed transparent-header small-devices">
+    <header>
+      <nav class="navbar navbar-default">
+        <div>
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5 navbar-header">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Home"></a>
+          </div>
+          <div id="header-second" class="col-lg-5 col-md-5 col-sm-9 text-right">
+            <button type="button" class="navbar-toggle pull-right visible-sm visible-xs collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+            </button>
+            <a href="#" class="visible-xs pull-right collapsed" data-toggle="collapse" data-target="#search-form" aria-expanded="false"><i class="fa fa-search" aria-hidden="true"></i></a>
+            <form id="search-form" class="navbar-form">
+              <input type="text" class="form-control" placeholder="Place or business">
+              <input type="text" class="form-control" placeholder="Location">
+              <a href="search.html" class="form-control btn btn-search btn-search-small"><i class="fa fa-search" aria-hidden="true"></i> <span>Search</span></a>
+            </form>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12">
+            <button type="button" class="navbar-toggle pull-right hidden-sm hidden-xs collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-collapse collapse collapsed" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="about-us.html">About Us</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle disabled-link disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="search.html">Listing details</a></li>
+                    <li><a href="search.html">Search v1</a></li>
+                    <li><a href="search-list.html">Search v2</a></li>
+                    <li><a href="company.html">Company</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="#" class="disabled">User panel <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="user.html">User page</a></li>
+                        <li><a href="my_listings.html">My listings</a></li>
+                        <li><a href="my_profile.html">My profile</a></li>
+                        <li><a href="add_listing.html">Add listing</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="coming-soon.html">Coming soon</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="terms-and-conditions.html">Terms and conditions</a></li>
+                    <li><a href="403.html">403 - Acces Denied</a></li>
+                    <li><a href="404.html">404 - Not Found</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle disabled-link disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Elements <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="tabs-buttons.html">Tabs & buttons</a></li>
+                    <li><a href="forms-messages.html">Forms & messages</a></li>
+                    <li><a href="countdowns-counters.html">Countdowns & Counters</a></li>
+                    <!-- <li role="separator" class="divider"></li> -->
+                    <li><a href="grid.html">Grid</a></li>
+                    <li><a href="icons.html">Icons</a></li>
+                    <li><a href="progress-bars.html">Progress Bars</a></li>
+                    <li><a href="sliders-galleries.html">Sliders & Galleries</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle disabled-link disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="blog.html">Blog list v1</a></li>
+                    <li><a href="blog_v2.html">Blog list v2</a></li>
+                    <li><a href="blog-categories.html">Blog category page</a></li>
+                    <li><a href="article-page.html">Article page v1</a></li>
+                    <li><a href="article-page_v2.html">Article page v2</a></li>
+                  </ul>
+                </li>
+                <li><a class="circle-link" href="login.html">Log In</a></li>
+                <li><a class="circle-link" href="sign-up.html">Sign Up</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div>
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="banner bg-overlay bg-image vertical-middle about-us">
+            <h1 class="with-element center-align">About Us</h1>
+          </div>
+          <div class="content-with-image section mobile-align-center outer-div">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <h2 class="with-element mobile">Who we are</h2>
+                  <p class="text-with-image">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare, arcu vehicula rhoncus euismod, dolor quam venenatis risus, quis cursus ante lacus id neque. Proin ornare dolor id dolor tempus pretium. Sed eu elit sit amet mi aliquam elementum sodales in velit. Ut bibendum tellus in ultricies maximus.</p>
+                  <p class="text-with-image">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare, arcu vehicula rhoncus euismod, dolor quam venenatis risus, quis cursus ante lacus id neque. Proin ornare dolor id dolor tempus pretium. Sed eu elit sit amet mi aliquam elementum sodales in velit. Ut bibendum tellus in ultricies maximus.</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 image">
+                  <img src="assets/images/about-us/Image1.jpg" alt="About us">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="icon-and-content mobile-align-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h2 class="with-element mobile">What we do</h2>
+                </div>
+                <div class="col-md-4">
+                  <img src="assets/images/about-us/Icon1.png" alt="Bring people together">
+                  <span class="with-icon">Bring people together</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare, arcu vehicula rhoncus euismod, dolor quam venenatis risus, quis cursus ante lacus id neque.</p>
+                </div>
+                <div class="col-md-4">
+                  <img src="assets/images/about-us/Icon2.png" alt="Develop your skills">
+                  <span class="with-icon">Develop your skills</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare, arcu vehicula rhoncus euismod, dolor quam venenatis risus, quis cursus ante lacus id neque.</p>
+                </div>
+                <div class="col-md-4">
+                  <img src="assets/images/about-us/Icon3.png" alt="A 'greener' world">
+                  <span class="with-icon">A 'greener' world</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare, arcu vehicula rhoncus euismod, dolor quam venenatis risus, quis cursus ante lacus id neque.</p>
+                </div>
+                <div class="col-md-4">
+                  <img src="assets/images/about-us/Icon4.png" alt="Located in 24 countries">
+                  <span class="with-icon">Located in 24 countries</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare, arcu vehicula rhoncus euismod, dolor quam venenatis risus, quis cursus ante lacus id neque.</p>
+                </div>
+                <div class="col-md-4">
+                  <img src="assets/images/about-us/Icon5.png" alt="Brilliant ideas!">
+                  <span class="with-icon">Brilliant ideas!</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare, arcu vehicula rhoncus euismod, dolor quam venenatis risus, quis cursus ante lacus id neque.</p>
+                </div>
+                <div class="col-md-4">
+                  <img src="assets/images/about-us/Icon6.png" alt="Work that magic">
+                  <span class="with-icon">Work that magic</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare, arcu vehicula rhoncus euismod, dolor quam venenatis risus, quis cursus ante lacus id neque.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="image-with-content-overlap content-spacing">
+            <div class="container">
+              <div class="row">
+          			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="skills">
+          				  <h2 class="with-element mobile">Skills</h2>
+                      <div class="progress-item">
+                        <p class="uppercase">Sales</p>
+                        <div class="progress-text">80</div>
+                        <div class="progress-bar">
+                          <div style="width:80%">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="progress-item">
+                        <p class="uppercase">Marketing</p>
+                        <div class="progress-text">92</div>
+                        <div class="progress-bar">
+                          <div style="width:92%">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="progress-item">
+                        <p class="uppercase">Design</p>
+                        <div class="progress-text">86</div>
+                        <div class="progress-bar">
+                          <div style="width:86%">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="progress-item">
+                        <p class="uppercase">Directing</p>
+                        <div class="progress-text">96</div>
+                        <div class="progress-bar">
+                          <div style="width:96%">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="progress-item">
+                        <p class="uppercase">Managing</p>
+                        <div class="progress-text">90</div>
+                        <div class="progress-bar">
+                          <div style="width:90%">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+          			</div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <h2 class="with-element center-align center-element">Our team</h2>
+              <div class="image-gallery-with-overlap center-align">
+                <div class="col-sm-2 col-xs-6">
+                  <div class="image-with-overlap">
+                    <img src="assets/images/about-us/team1.jpg" class="" alt="Mark Wahlberg">
+                    <div class="social-icons">
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                  <p>Mark Wahlberg</p>
+                  <p>Actor</p>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                  <div class="image-with-overlap">
+                    <img src="assets/images/about-us/team2.jpg" class="" alt="John Doe">
+                    <div class="social-icons">
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                  <p>John Doe</p>
+                  <p>Middle Developer</p>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                  <div class="image-with-overlap">
+                    <img src="assets/images/about-us/team3.jpg" class="" alt="Susan Sarandon">
+                    <div class="social-icons">
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                  <p>Susan Sarandon</p>
+                  <p>CEO</p>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                  <div class="image-with-overlap">
+                    <img src="assets/images/about-us/team4.jpg" class="" alt="Jet Li">
+                    <div class="social-icons">
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                  <p>Jet Li</p>
+                  <p>Budget analyst</p>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                  <div class="image-with-overlap">
+                    <img src="assets/images/about-us/team1.jpg" class="" alt="Mark Wahlberg">
+                    <div class="social-icons">
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                  <p>Matthew Broderick</p>
+                  <p>Junior Developer</p>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                  <div class="image-with-overlap">
+                    <img src="assets/images/about-us/team2.jpg" class="" alt="John Doe">
+                    <div class="social-icons">
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                  <p>Matthew Willis</p>
+                  <p>Accountant</p>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                  <div class="image-with-overlap">
+                    <img src="assets/images/about-us/team3.jpg" class="" alt="Susan Sarandon">
+                    <div class="social-icons">
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                  <p>Jane Dawson</p>
+                  <p>Senior Developer</p>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                  <div class="image-with-overlap">
+                    <img src="assets/images/about-us/team4.jpg" class="" alt="Jet Li">
+                    <div class="social-icons">
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                  <p>Jason Weir</p>
+                  <p>Senior Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    	    <div class="statistics bg-image about-us content-spacing">
+      			<div class="content">
+      				<div class="container">
+      				  <div class="row">
+      					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 counter-item">
+                  <!-- For modern browsers. -->
+                  <i class="material-icons">thumb_up</i>
+                  <!-- For IE9 or below. -->
+                  <!-- <i class="material-icons">&#xE8DC;</i> -->
+      					  <p class="number">352</p>
+      					  <p class="uppercase">Satisfied customers</p>
+      					</div>
+      					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 counter-item">
+      					  <!-- For modern browsers. -->
+                  <i class="material-icons">assignment_turned_in</i>
+                  <!-- For IE9 or below. -->
+                  <!-- <i class="material-icons">&#xE862;</i> -->
+      					  <p class="number">405</p>
+      					  <p class="uppercase">Complete projects</p>
+      					</div>
+      					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 counter-item">
+      					  <!-- For modern browsers. -->
+                  <i class="material-icons">free_breakfast</i>
+                  <!-- For IE9 or below. -->
+                  <!-- <i class="material-icons">&#xEB44;</i> -->
+      					  <p class="number">813</p>
+      					  <p class="uppercase">Drinked teas</p>
+      					</div>
+      					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 counter-item">
+      					  <!-- For modern browsers. -->
+                  <i class="material-icons">access_time</i>
+                  <!-- For IE9 or below. -->
+                  <!-- <i class="material-icons">&#xE192;</i> -->
+      					  <p class="number">1200</p>
+      					  <p class="uppercase">Worked hours</p>
+      					</div>
+      				  </div>
+      			  </div>
+            </div>
+          </div>
+		      <div class="container">
+		        <div class="row">
+		          <div class="testimonials-slider center-align">
+          			<div>
+                  <div class="slide-content">
+            			  <img src="assets/images/about-us/apos.png" alt="Quotation Mark">
+            			  <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend, mi vel dapibus tempor, sem nibh gravida turpis, a ultrices purus ex in orci.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend, mi vel dapibus tempor, sem nibh gravida turpis, a ultrices purus ex in orci.</p>
+            			  <img src="assets/images/about-us/testimonial.png" alt="Dave Navarro">
+            			  <p class="name">Dave Navarro</p>
+            			  <p class="job uppercase">CEO @ "Scramble"</p>
+                  </div>
+          			</div>
+          			<div>
+                  <div class="slide-content">
+            			  <img src="assets/images/about-us/apos.png" alt="Quotation Mark">
+            			  <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend, mi vel dapibus tempor, sem nibh gravida turpis, a ultrices purus ex in orci.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            			  <img src="assets/images/about-us/testimonial.png" alt="David Just">
+            			  <p class="name">David Just</p>
+            			  <p class="job uppercase">CEO @ "YouHow"</p>
+                  </div>
+          			</div>
+			        </div>
+			      </div>
+		      </div>
+		    </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Home" class="logo"></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend, mi vel dapibus tempor, sem nibh gravida turpis, a ultrices purus ex in orci.</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/" class="footer-social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://plus.google.com/" class="footer-social-link"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/" class="footer-social-link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 footer-menu">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 menu">
+                <h2 class="footer-element">Top Categories</h2>
+                <ul>
+                  <li><a href="search.html" class="footer-link">Food</a></li>
+                  <li><a href="search.html" class="footer-link">Shopping</a></li>
+                  <li><a href="search.html" class="footer-link">Clinics & Medical</a></li>
+                  <li><a href="search.html" class="footer-link">Entertainment</a></li>
+                  <li><a href="search.html" class="footer-link">Hotels & Travel</a></li>
+                  <li><a href="search.html" class="footer-link">Beauty & Salon</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 menu">
+                <h2 class="footer-element">Useful Links</h2>
+                <ul>
+                  <li><a href="about-us.html" class="footer-link">About Us</a></li>
+                  <li><a href="contact.html" class="footer-link">Contact</a></li>
+                  <li><a href="blog.html" class="footer-link">Blog</a></li>
+                  <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                  <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 menu">
+                <h2 class="footer-element">Legal</h2>
+                <ul>
+                  <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                  <li><a href="terms-and-conditions.html" class="footer-link">Terms & Conditions</a></li>
+                  <li><a href="#" class="footer-link">Legal Disclosure</a></li>
+                  <li><a href="#" class="footer-link">Use of Cookies</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2017. All rights reserved.</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/libraries/slick/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/libraries/smartmenu/jquery.smartmenus.js"></script>
+    <script src="assets/libraries/smartmenu/addons/bootstrap/jquery.smartmenus.bootstrap.js"></script>
+    <script src="assets/libraries/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="assets/custom_libraries/progressbar/number-animate.js"></script>
+    <script src="assets/custom_libraries/progressbar/progress-animate.js"></script>
+    <script src="assets/custom_libraries/progressbar/progress-bar-counters.js"></script>
+  </body>
+
+</html>
+

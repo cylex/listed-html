@@ -1,0 +1,63 @@
+/* Company page styling */
+.banner-company-details {
+  padding-top: 10em;
+  padding-bottom: 3em;
+  h1 {
+    margin-bottom: 0;
+  }
+  .rating-stars {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+.review-item {
+  margin-top: 20px;
+  .primary-color {
+    font-weight: @font--semibold;
+  }
+}
+.amenities {
+  a {
+    font-weight: @font--regular;
+  }
+  [class*='col-'] {
+    margin-bottom: 10px;
+  }
+  .amenity-item {
+    display: inline-block;
+    padding-right: 35px;
+    margin-bottom: 10px;
+    a i {
+      display: inline-block;
+      line-height: 1.375em;
+    }
+  }
+}
+
+//* Responsive *//
+@media(max-width: @screen-xs-max) {
+  .review-item {
+    img {
+      min-width: 50px;
+      margin-left: -10px;
+    }
+  }
+}
+@media(max-width: @screen-xxs-max) {
+  .banner-company-details {
+    .text-details {
+      width: 100%;
+    }
+  }
+}
+@media(min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+  .amenities {
+    a {
+      display: block;
+      i {
+        display: block;
+        text-align: left;
+      }
+    }
+  }
+}

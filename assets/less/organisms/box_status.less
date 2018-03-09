@@ -1,0 +1,45 @@
+/* Box status styling */
+.box-status {
+  .status-content {
+    padding: 60px;
+    max-width: 500px;
+    h1 {
+      color: @link--primary;
+      font-weight: 300;
+      font-size: @font--extralarger;
+      margin-bottom: 50px;
+      &:after {
+        padding: 5px 0px 8px 0px;
+        content: '';
+        display: block;
+        border-bottom: 3px solid #a7a7a7;
+        margin: 0;
+        width: 45px;
+      }
+    }
+    p {
+      font-size: @font--medium;
+      margin-bottom: 30px;
+      b {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/* Responsive */
+@media(max-width: @screen-md-max) {
+  .box-status {
+    text-align: center;
+    box-shadow: none;
+    border: none;
+    .status-content {
+      padding-top: 0;
+      padding: 20px;
+      max-width: unset;
+      h1:after {
+        margin: auto;
+      }
+    }
+  }
+}

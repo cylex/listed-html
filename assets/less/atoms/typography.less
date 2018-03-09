@@ -1,0 +1,263 @@
+/*
+  Typography general styling
+*/
+body {
+  font-family: @typography-font-type-primary;
+  font-size: 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: @typography-font-type-primary;
+}
+h1 {
+  font-size: @font--h1;
+  font-weight: @font--semibold;
+  &:not(.smaller) {
+    text-transform: uppercase;
+  }
+  //h1 title with pseudo-element
+  &.with-element {
+    text-transform: uppercase;
+    &:after {
+      padding: 5px 0px 8px 0px;
+      content: '';
+      display: block;
+      text-align: center;
+      border-bottom: 2px solid @sun-yellow;
+      margin: 0 auto;
+      width: 104px;
+    }
+  }
+  //h1 in big banner
+  &.banner-big {
+    font-size: @font--banner-big-h1;
+    font-weight: @font--light;
+    text-transform: unset;
+  }
+  //
+  &.smaller {
+    color: @text--secondary;
+    font-size: 1.867em;
+    margin-top: 0px;
+  }
+  span {
+    font-weight: @font--regular;
+  }
+}
+h2 {
+  font-size: @font--h2;
+  font-weight: @font--semibold;
+  color: @dark-gray;
+  margin-bottom: 25px;
+  // h2 title with pseudo-element
+  &.with-element {
+    text-transform: uppercase;
+    &:after {
+      padding: 7px 0px 8px 0px;
+      content: '';
+      color: @lighter-gray;
+      display: block;
+      border-bottom: 1px solid @gray;
+      margin: 0;
+      width: 40px;
+    }
+    &.center-element {
+      text-align: center;
+      &:after {
+        margin: auto;
+      }
+    }
+  }
+  // h2 title with pseudo-element in footer
+  &.footer-element {
+    font-size: 1.2em;
+    font-weight: @font--semibold;
+    margin-bottom: 15px;
+    margin-top: 0;
+    color: @white;
+    &:after {
+      padding: 5px 0px 8px 0px;
+      content: '';
+      display: block;
+      border-bottom: 2px solid @white;
+      margin: 0;
+      width: 45px;
+    }
+  }
+  //h2 in big banner
+  &.banner-big {
+    font-size: @font--banner-big-h2;
+    font-weight: @font--regular;
+  }
+  //h2 with padding
+  &.with-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  &.title-with-image {
+    font-size: 1.867em; //28px
+    font-weight: @font--regular;
+    padding-bottom: 15px;
+    line-height: 1.25em;
+  }
+}
+h3 {
+  font-size: @font--h3;
+  font-weight: @font--semibold;
+  color: @dark-gray;
+  &.white {
+    color: @white;
+  }
+}
+h4 {
+  font-size: @font--h4;
+  font-weight: @font--semibold;
+  color: @dark-gray;
+}
+h5 {
+  font-size: @font--h5;
+}
+h6 {
+  font-size: @font--h6;
+}
+p {
+  font-size: @font--base;
+  font-weight: @font--regular;
+  color: @gray;
+  line-height: 22px;
+  &.text-with-image {
+    line-height: 24px;
+  }
+}
+span {
+  font-size: @font--base;
+  &.with-icon {
+    font-weight: @font--semibold;
+    color: @dark-gray;
+    font-size: @font--large;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+  }
+}
+.small-text {
+  font-size: @font--xsmall;
+}
+.bigger-text {
+  font-size: @font--medium;
+}
+.primary-color {
+  color: @link--primary;
+}
+.secondary-color {
+  color: @text--image;
+}
+.dark-color {
+  color: @text--secondary;
+}
+.white-text {
+  color: #fff !important;
+}
+.inline-label {
+  min-width: 100px;
+  display: inline-block;
+  padding-right: 10px;
+}
+blockquote {
+  background-color: #f5f5f5;
+  padding: 51px 20px;
+  margin: 32px 0;
+  font-size: 0.9330000000000001em;
+  font-weight: 400;
+  font-style: italic;
+  border-left: 3px solid #cdcdcd;
+  p {
+    margin: 0 !important;
+    font-size: 1.467em;
+    color: #323232;
+    display: inline-block;
+    line-height: 22px;
+    &:before {
+      content: '"';
+      font-weight: 600;
+      font-size: 1.467em;
+      position: relative;
+      right: 5px;
+      bottom: 15px;
+      font-style: italic;
+    }
+  }
+  &.with-image {
+    padding: 30px 20px;
+    font-style: normal;
+    color: #777;
+    line-height: 22px;
+    span {
+      &.first {
+        padding-bottom: 15px;
+        font-size: @font--large;
+        display: inline-block;
+        font-weight: @font--semibold;
+        color: @dark-gray;
+      }
+    }
+  }
+}
+
+// * Responsive * //
+@media(max-width: @screen-sm-max) {
+  h1 {
+    font-size: @font--h1-smaller;
+    &.banner-big {
+      font-size: @font--banner-big-h1-responsive;
+      line-height: 34px;
+    }
+  }
+  h2 {
+    font-size: @font--xlarge;
+    &.banner-big {
+      font-size: @font--banner-big-h2-responsive;
+    }
+    &.mobile {
+      text-align: center;
+      &:after {
+        margin: auto;
+      }
+    }
+    //h2 with padding
+    &.with-padding {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    &.title-with-image {
+      font-size: @font--xlarge;
+    }
+  }
+  h3 {
+    font-size: @font--medium;
+  }
+  p {
+    font-size: @font--xsmall;
+    line-height: 20px;
+    &.text-with-image {
+      line-height: 20px;
+    }
+  }
+  span {
+    font-size: @font--xsmall;
+  }
+  ul {
+    li {
+      font-size: @font--xsmall;
+    }
+  }
+  blockquote {
+    p {
+      font-size: @font--xlarge;
+    }
+    img {
+      min-width: 65px;
+      position: absolute;
+      left: 5px;
+    }
+  }
+}

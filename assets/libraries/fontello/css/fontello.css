@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?49817240');
+  src: url('../font/fontello.eot?49817240#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?49817240') format('woff2'),
+       url('../font/fontello.woff?49817240') format('woff'),
+       url('../font/fontello.ttf?49817240') format('truetype'),
+       url('../font/fontello.svg?49817240#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?49817240#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-myspace:before { content: '\e800'; } /* '' */
+.icon-custom-asian-food:before { content: '\e801'; } /* '' */
+.icon-custom-bakery:before { content: '\e802'; } /* '' */
+.icon-custom-burger:before { content: '\e803'; } /* '' */
+.icon-custom-clinic:before { content: '\e804'; } /* '' */
+.icon-custom-criminal:before { content: '\e805'; } /* '' */
+.icon-custom-dentist:before { content: '\e806'; } /* '' */
+.icon-custom-doctor:before { content: '\e807'; } /* '' */
+.icon-custom-eye:before { content: '\e808'; } /* '' */
+.icon-custom-family:before { content: '\e809'; } /* '' */
+.icon-custom-fast-food:before { content: '\e80a'; } /* '' */
+.icon-custom-financial:before { content: '\e80b'; } /* '' */
+.icon-custom-healthcare:before { content: '\e80c'; } /* '' */
+.icon-custom-heart:before { content: '\e80d'; } /* '' */
+.icon-custom-hospital:before { content: '\e80e'; } /* '' */
+.icon-custom-italian-food:before { content: '\e80f'; } /* '' */
+.icon-custom-pizza:before { content: '\e810'; } /* '' */
+.icon-custom-property:before { content: '\e811'; } /* '' */
+.icon-custom-tax:before { content: '\e812'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-gplus:before { content: '\f0d5'; } /* '' */
+.icon-linkedin:before { content: '\f0e1'; } /* '' */
+.icon-youtube:before { content: '\f167'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
+.icon-flickr:before { content: '\f16e'; } /* '' */
+.icon-yahoo:before { content: '\f19e'; } /* '' */
+.icon-reddit:before { content: '\f1a1'; } /* '' */
+.icon-stumbleupon:before { content: '\f1a4'; } /* '' */
+.icon-delicious:before { content: '\f1a5'; } /* '' */
+.icon-digg:before { content: '\f1a6'; } /* '' */
+.icon-slideshare:before { content: '\f1e7'; } /* '' */
+.icon-facebook-official:before { content: '\f230'; } /* '' */
+.icon-pinterest:before { content: '\f231'; } /* '' */
+.icon-vimeo:before { content: '\f27d'; } /* '' */

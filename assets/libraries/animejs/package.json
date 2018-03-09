@@ -1,0 +1,62 @@
+{
+  "name": "animejs",
+  "version": "2.2.0",
+  "description": "JavaScript animation engine",
+  "main": "anime.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliangarnier/anime.git"
+  },
+  "keywords": [
+    "anime",
+    "animation",
+    "javascript",
+    "CSS",
+    "transforms",
+    "SVG",
+    "canvas"
+  ],
+  "author": {
+    "name": "Julian Garnier",
+    "email": "hello@julian.gr"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juliangarnier/anime/issues"
+  },
+  "homepage": "http://animejs.com",
+  "files": [
+    "anime.js",
+    "anime.min.js"
+  ],
+  "devDependencies": {
+    "google-closure-compiler-js": "^20170124.0.0"
+  },
+  "gitHead": "ae9eb90ab66e92f89dad8f9b59e9df3928c16991",
+  "_id": "animejs@2.2.0",
+  "scripts": {},
+  "_shasum": "35eefdfc535b81949c9cb06f0b3e60c02e6fdc80",
+  "_from": "animejs@",
+  "_npmVersion": "4.0.2",
+  "_nodeVersion": "6.9.1",
+  "_npmUser": {
+    "name": "juliangarnier",
+    "email": "hello@julian.gr"
+  },
+  "dist": {
+    "shasum": "35eefdfc535b81949c9cb06f0b3e60c02e6fdc80",
+    "tarball": "https://registry.npmjs.org/animejs/-/animejs-2.2.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "juliangarnier",
+      "email": "hello@julian.gr"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/animejs-2.2.0.tgz_1506359444369_0.5265960388351232"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/animejs/-/animejs-2.2.0.tgz"
+}

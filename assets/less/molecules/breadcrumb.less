@@ -1,0 +1,29 @@
+/*
+  Breadcrumb styling
+*/
+.breadcrumb {
+  background-color: transparent;
+  padding: 10px 0;
+  > li + li:before {
+    content: "\f105";
+    font: normal normal normal 20px FontAwesome;
+    color: @gray;
+    padding: 0 10px;
+    position: relative;
+    color: @light-gray;
+    position: relative;
+    top: 2px;
+  }
+  a {
+    font-weight: normal;
+    font-size: @font--small;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  > li:last-child {
+    a {
+      color: @gray;
+    }
+  }
+}
